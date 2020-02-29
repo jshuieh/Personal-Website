@@ -23,10 +23,10 @@
 			<a href="experience.html">Experience</a>
 		</div>
 		<div class="element">
-			<a href="projects.html">Projects</a>
+			<div class="current"><a href="projects.html">Projects</a></div>
 		</div>
 		<div class="element">
-			<a href="index.html">Skills</a>
+			<a href="skills.html">Skills</a>
 		</div>
 		<div class="element">
 			<a href="contact.html">Contact</a>
@@ -34,7 +34,80 @@
 	</div>	
 	<div class="welcome">
     	<h1 style="text-align:center;">My Projects</h1>
-    	
+    	<h3><a href="https://github.com/Skelothan/Octave">Octave</a> - Game Creation Society</h3>
+    	<p>Sep 2019 – Dec 2019</p>
+    	<p>Octave is a 2D rhythm game designed to be played on the arcade machine during showcases. Notes or beats move from the sides of the screen toward circles in the center of the screen, and the player must time their button presses to hit those notes. Each play is scored on how accurate the player's notes are, and the high scores are saved and displayed for each song. Octave includes songs from previous or unfinished GCS games, and uses MIDI files to generate the beatmaps.</p>
+    	<p>Resposibilities:</p>
+    	<ul>
+    		<li>Programming and designing the game menus, including song and name selection.</li>
+    		<li>Writing and accessing JSON databases for song and score data.</li>
+    		<li>Solving problems in regards to game design and bugs.</li>
+    		<li>Integrating scripts and Github branches to ensure proper game functioning</li>
+    		<li>Languages/technologies used: Lua, JSON, Love2D, GitHub, Sublime Text</li>
+    	</ul>
+    	<h3><a href="https://github.com/jshuieh/Pit-TV-Display">Pit TV Display</a> - Cupertino Robotics</h3>
+    	<p>Jan 2019 - Apr 2019</p>
+    	<p>This project was showcased at FRC tournament events during the 2019 season. It included a TV display that could change screens using arcade-style buttons, and the software used was run on a Raspberry Pi. The TV displayed the features of the robot, a description of our team, and various videos related to the event and the robot. Since the theme was space due to the anniversary of Apollo 11, one side of the pit was decorated as a rocket ship. When pressing a button on the ship, a capsule on the top of the ship (that was attached to a motor) would run across the pit, and "land" before returning to the other side after a couple minutes. A video of the Apollo mission, with an animation of our robot edited in, would play on the TV. The purpose of this display was to showcase our robot and its featueres so that other teams would choose our team for quarterfinals, to interest the judges and possibly win a Team Spirit award, and to entertain guests. In the end, the team was chosen for quarterfinals, and many people enjoyed the interactive display.</p>
+    	<p>Responsibilities:</p>
+    	<ul>
+    		<li>Designed and programmed different user interfaces to clearly show information about robot and team.</li>
+    		<li>Designed TV display for intuitive usage with buttons after considering many different possible solutions.</li>
+    		<li>Used Python libraries for UI, video playback, and button and motor control.</li>
+    		<li>Led other members working on project and helped teach them programming and design concepts.</li>
+    		<li>Assigned tasks to other members and ensured project progress was on time.</li>
+    		<li>Communicated effectively with many different project teams to integrate all parts of the display.</li>
+    		<li>Troubleshooted a variety of eletrical and hardware problems during runtime.</li>
+    		<li>Languages/technologies used: Python, Raspberry Pi, PIL, tkinter, GPIO, Popen</li>
+    	</ul>
+    	<h3><a href="https://github.com/Tino-FRC-2473/FRCSPN">FRCSPN</a> - Cupertino Robotics</h3>
+    	<p>Jan 2018 - Mar 2018</p>
+    	<p>FRCSPN is a JavaFX-based application designed to scout FRC events. This includes getting data of matches and match details from The Blue Alliance. We also implemented match prediction systems based on past match details.</p>
+    	<p>Responsibilities:</p>
+    	<ul>
+    		<li>Display data and analyze data to predict match outcomes.</li>
+    		<li>Design and program clean and easy-to-use UI.</li>
+    		<li>Access website database to import team data.</li>
+    		<li>Languages/technologies used: Python, Java, JavaFX, Eclipse</li>
+    	</ul>
+    	<h3><a href="https://github.com/Tino-FRC-2473/Diagnostic">Robot Diagonostics and Architecture</a> - Cupertino Robotics</h3>
+    	<p>Nov 2017 - Jan 2018</p>
+    	<p>This program diagnoses each device of the robot to ensure that the robot is functioning well before games, and the overall architecture ensures that no crashes would occur during runtime. </p>
+    	<p>Responsibilities:</p>
+    	<ul>
+    		<li>Use error handling code to ensure robot does not crash during runtime.</li>
+    		<li>Run each part of the robot (motor, encoder, etc.) to ensure robot is functional.</li>
+    		<li>Output relevant information such as current and errors to dashboard.</li>
+    		<li>Use sockets and threads to ensure robot and robot components are connected through router.</li>
+    		<li>Languages/technologies used: Java, Python, Eclipse, WPILib</li>
+    	</ul>
+    	<h3><a href="https://github.com/Tino-FRC-2473/CC2017/tree/LiDAR">CC2017 LiDAR</a> - Cupertino Robotics</h3>
+    	<p>Jun 2017 - Sep 2017</p>
+    	<p>This project was integrated into the robot code for the 2017 Chezy Champs tournament. Using LiDAR data, we found the corner of the boiler so that the robot could move there and score points by shooting balls into the boiler.</p>
+    	<ul>
+    		<li>Collect and analyze LiDAR sensor data to detect corners.</li>
+    		<li>Map out and locate robot in the room based on surroundings.</li>
+    		<li>Use Matplotlib to visualize data, corners, and map of the room.</li>
+    		<li>Languages/technologies used: Python, Matplotlib, NumPy, SciPy, Raspberry Pi, LiDAR</li>
+    	</ul>
+    	<h3><a href="https://github.com/Tino-FRC-2473/FRC2017">FRC 2017 Drive</a> - Cupertino Robotics</h3>
+    	<p>Jan 2017 - Apr 2017</p>
+    	<p>Our team focused on programming robot movement based on controller input, sensors, and PID.</p>
+    	<p>Resposibilities:</p>
+    	<ul>
+    		<li>Use data from joystick controls, encoder sensors, and motor values to write drive train.</li>
+    		<li>Utilize WPILib functions and objects to properly integrate robot parts.</li>
+    		<li>Test and adjust PID values to ensure smooth straight line.</li>
+    		<li>Languages/technologies used: Java, Eclipse, WPILib</li>
+    	</ul>
+    	<h3><a href="https://github.com/Tino-FRC-2473/AutoPlay">AutoPlay</a></h3>
+    	<p>
+    	<p>AutoPlay replicates teleop mode robot movement and actions during autonomous mode. It uses threading to read the actions done, update, replay, and flush when the actions are complete.</p>
+    	<ul>	
+    		<li>Record movement and commands run in teleop mode and write these to a thread.</li>
+    		<li>Use actions in thread to replay commands while in autonomous mode.</li>
+    		<li>Flush out thread after certain time frame to ensure thread is not overloaded with commands.</li>
+    		<li>Languages/technologies used: Java, Eclipse, WPILib</li>
+    	</ul>
     </div>
 	<script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
 </body>

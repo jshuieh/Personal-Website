@@ -1,28 +1,59 @@
+@font-face {
+    font-family: "Mont";
+    src: url(Montserrat-Regular.ttf);
+}
+
 body {
     margin: 0px;
+   	font-family: "Mont";
+   	color: #4E6168;
+   	background: #BAD0D1;
 }
 
 .nav-bar {
 	width: 100%;
 	height: 40px;
 	margin: 0;
-	background: black; 
+	background: #1B2428; 
 	position: sticky;
 	top: 0; 
 }
 
-.nav-bar > .element{
+.element{
 	width: 16.25%;
-	line-height: 40px;
-	text-align: center;
-	display: inline-block;
 	margin: 0;
-	font-family: Arial;
+	display: inline-block;
+	text-align: center;
 }
 
+.element:hover{
+	animation: positionShift 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes positionShift {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
 .nav-bar > .element > a{
-	color: white;
+	line-height: 40px;
+	text-align: center;
+	font-family: "Mont";
+	color: #BAD0D1;
 	text-decoration: none; 
+}
+
+.nav-bar > .element > .current > a{
+	color: #BAD0D1;
+	line-height: 40px;
+	text-align: center;
+	font-family: "Mont";
+	text-decoration: underline;
 }
 
 .welcome {
@@ -44,4 +75,16 @@ body {
 	display: inline-block;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+h3 > a {
+	color: #4E6168;
+	font-family: "Mont";
+	text-decoration: none;
+}
+
+p > a {
+	color: #4E6168;
+	font-family: "Mont";
+	text-decoration: underline;
 }
