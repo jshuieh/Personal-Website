@@ -1,0 +1,65 @@
+@import "style.css";
+
+/*******************************************************************************
+ Top centered image and text
+ ******************************************************************************/
+
+.hi {
+  font-size: 6vw;
+  color: white;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.rectangle-about{
+  width: 100%;
+  height: auto;
+  padding: 100px 10vw;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.about{
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.3em;
+  font-weight: 500;
+}
+
+.rectangle-education{
+  width: 100%;
+  height: auto;
+  paddding: 100px 15vw;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.education-heading{
+  font-size: 36px;
+  text-align: Center;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+.education-date{
+  left: 20px;
+  width: 220px;
+  position: absolute;
+  top: 295px;
+  font-size: 24px;
+}
+
+.education-school{
+  left: 20px;
+  width: 220px;
+  position: absolute;
+  top: 333px;
+  font-size: 32px;
+}
+
+.education-description{
+  left: 260px;
+  width: 700px;
+  position: absolute;
+  top: 298px;
+}

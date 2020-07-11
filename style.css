@@ -4,78 +4,119 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
    	font-family: "Mont";
-   	color: #4E6168;
-   	background: #BAD0D1;
+   	color: #000000;
+   	background: #FFFFFF;
+    font-size: 0;
+}
+
+/*******************************************************************************
+Navigation bar
+ ******************************************************************************/
+
+@keyframes positionShift {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
 }
 
 .nav-bar {
 	width: 100%;
-	height: 40px;
+	height: 75px;
 	margin: 0;
-	background: #1B2428; 
+	background: #000000;
 	position: sticky;
-	top: 0; 
+	top: 0;
+}
+
+.title{
+  display: inline-block;
+  float: left;
+}
+
+.title:hover{
+  animation: positionShift 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.nav-bar > .title > a{
+  font-size: 32px;
+  padding-left: 75px;
+	line-height: 75px;
+	text-align: center;
+	font-family: "Mont";
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 .element{
-	width: 16.25%;
 	margin: 0;
 	display: inline-block;
-	text-align: center;
+	float:right;
+  padding-right:25px;
 }
 
-.element:hover{
+.page{
+  margin-left:20px;
+  margin-right:20px;
+  display: inline-block;
+  float:left;
+}
+
+.page:hover{
 	animation: positionShift 0.5s;
-    animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-@keyframes positionShift {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0.5;
-    }
-}
-.nav-bar > .element > a{
-	line-height: 40px;
+.nav-bar > .element > .page > a{
+	line-height: 75px;
 	text-align: center;
 	font-family: "Mont";
-	color: #BAD0D1;
-	text-decoration: none; 
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
-.nav-bar > .element > .current > a{
-	color: #BAD0D1;
-	line-height: 40px;
-	text-align: center;
-	font-family: "Mont";
-	text-decoration: underline;
+/*******************************************************************************
+ Scrollbar
+ ******************************************************************************/
+ ::-webkit-scrollbar {
+  width: 12px;
 }
 
-.welcome {
-	width: 95%;
-	display: inline-block;
-	margin-left: 10px;
-	margin-right: 10px;
+::-webkit-scrollbar-track {
+  background: #000;
 }
 
-.about-me {
-	width: 95%;
-	display: inline-block;
-	margin-left: 10px;
-	margin-right: 10px;
+::-webkit-scrollbar-thumb {
+  background: #222;
 }
 
-.edu-sect {
-	width: 95%;
-	display: inline-block;
-	margin-left: 10px;
-	margin-right: 10px;
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }
+
+/*******************************************************************************
+ Content formatting
+ ******************************************************************************/
+
+ .container {
+   position: relative;
+   text-align: center;
+   background-color: black;
+   color: white;
+   width: 100%;
+ }
+
+ .centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
 
 h3 > a {
 	color: #4E6168;
