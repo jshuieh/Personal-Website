@@ -29,37 +29,65 @@
 .rectangle-education{
   width: 100%;
   height: auto;
-  paddding: 100px 15vw;
+  padding: 100px 10vw;
   overflow-wrap: break-word;
   box-sizing: border-box;
 }
 
-.education-heading{
-  font-size: 36px;
-  text-align: Center;
-  line-height: 1.5em;
-  font-weight: bold;
-}
-
 .education-date{
-  left: 20px;
-  width: 220px;
-  position: absolute;
-  top: 295px;
-  font-size: 24px;
+  grid-area: date;
+  font-size: 18px;
+  color:white;
+  text-align: right;
+  vertical-align: bottom;
+  margin-top: 7px;
 }
 
 .education-school{
-  left: 20px;
-  width: 220px;
-  position: absolute;
-  top: 333px;
-  font-size: 32px;
+  grid-area: school;
+  font-size: 28px;
+  color: white;
+  text-align: right;
+}
+
+.education-major{
+  grid-area: major;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+  float: left;
+  vertical-align: bottom;
+}
+
+.education-heading{
+  grid-area: title;
+  color:white;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .education-description{
-  left: 260px;
-  width: 700px;
-  position: absolute;
-  top: 298px;
+  grid-area: description;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  margin-top: 7px;
 }
+
+.grid-education{
+  width: 100%;
+  height: auto;
+  overflow-wrap: break-word;
+  display: inline-grid;
+  grid-template-areas:
+    'date major'
+    'school description';
+  row-gap: 10px;
+  background-color: black;
+  grid-template-columns: 30% 70%;
+  column-gap: 20px;
+}
+
