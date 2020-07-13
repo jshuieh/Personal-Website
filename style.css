@@ -1,3 +1,5 @@
+@import "font-awesome/css/font-awesome.min.css";
+
 @font-face {
     font-family: "Mont";
     src: url(Montserrat-Regular.ttf);
@@ -21,7 +23,7 @@ Navigation bar
 
 @keyframes positionShift {
     0% { opacity: 1; }
-    100% { opacity: 0.5; }
+    100% { opacity: 0.7; }
 }
 
 .nav-bar {
@@ -55,16 +57,16 @@ Navigation bar
 
 .element{
 	margin: 0;
-	display: inline-block;
 	float:right;
   padding-right:25px;
 }
 
 .page{
-  margin-left:20px;
-  margin-right:20px;
+  margin: 0px 20px;
   display: inline-block;
   float:left;
+  color: white;
+  width: auto;
 }
 
 .page:hover{
@@ -76,9 +78,61 @@ Navigation bar
 	line-height: 75px;
 	text-align: center;
 	font-family: "Mont";
-	color: #FFFFFF;
+	color: white;
 	text-decoration: none;
+  font-size:16px;
 }
+
+/*******************************************************************************
+Dropdown
+*******************************************************************************/
+
+.dropbtn {
+  background-color: #000;
+  margin-top: 10px;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #040404;
+  z-index: 9999;
+  min-width: 200px;
+  top: 75px;
+  right: -25px;
+  padding: 12px 0px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.dropdown-content a:hover {
+  animation: positionShift 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.fa-nav {
+  font-size: 30px;
+}
+
+.show { display:block; }
 
 /*******************************************************************************
  Scrollbar
@@ -109,6 +163,7 @@ Navigation bar
    background-color: black;
    color: white;
    width: 100%;
+   z-index: 0;
  }
 
  .centered {
@@ -117,6 +172,56 @@ Navigation bar
    left: 50%;
    transform: translate(-50%, -50%);
  }
+
+ /******************************************************************************
+ Change by width
+ ******************************************************************************/
+ @media all and (min-width: 950px) {
+    .element .dropdown{display:none;}
+    .element .page{display:block;}
+}
+
+@media all and (max-width: 949px) {
+  .element .dropdown{display:block;}
+  .element .page{display:none;}
+}
+
+ /******************************************************************************
+ Footer
+ ******************************************************************************/
+
+.rectangle-footer {
+  background-color: #040404;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 25px;
+}
+
+.container-social {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  line-height: 35px;
+  z-index: 1000;
+}
+
+.fa-footer{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  z-index: 1000;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
 
 h3 > a {
 	color: #4E6168;

@@ -4,11 +4,28 @@
  Top centered image and text
  ******************************************************************************/
 
+ .container-img {
+   position: relative;
+   text-align: center;
+   background-color: black;
+   color: white;
+   width: 100%;
+   z-index: -1000;
+ }
+
 .hi {
   font-size: 6vw;
   color: white;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
+}
+
+/*******************************************************************************
+ About Me
+ ******************************************************************************/
+
+.container-about{
+  z-index: -1000;
 }
 
 .rectangle-about{
@@ -26,12 +43,17 @@
   font-weight: 500;
 }
 
+/*******************************************************************************
+ Education
+ ******************************************************************************/
+
 .rectangle-education{
   width: 100%;
   height: auto;
   padding: 100px 10vw;
   overflow-wrap: break-word;
   box-sizing: border-box;
+  background-color: #040404;
 }
 
 .education-date{
@@ -39,8 +61,7 @@
   font-size: 18px;
   color:white;
   text-align: right;
-  vertical-align: bottom;
-  margin-top: 7px;
+  margin-top: 6px;
 }
 
 .education-school{
@@ -60,7 +81,6 @@
 }
 
 .education-heading{
-  grid-area: title;
   color:white;
   font-size: 36px;
   text-align: center;
@@ -74,7 +94,8 @@
   font-size: 18px;
   color: white;
   text-align: left;
-  margin-top: 7px;
+  margin-top: 3px;
+  line-height: 150%;
 }
 
 .grid-education{
@@ -85,9 +106,68 @@
   grid-template-areas:
     'date major'
     'school description';
-  row-gap: 10px;
-  background-color: black;
+  row-gap: 5px;
   grid-template-columns: 30% 70%;
-  column-gap: 20px;
+  column-gap: 30px;
+  margin: 10px 0px;
 }
 
+.extra-space{
+  height: 10px;
+}
+
+/*******************************************************************************
+ Experience
+ ******************************************************************************/
+ .rectangle-work{
+   width: 100%;
+   height: auto;
+   padding: 100px 20vw;
+   overflow-wrap: break-word;
+   box-sizing: border-box;
+   background-color: #000000;
+ }
+
+ .work-heading{
+   color:white;
+   font-size: 36px;
+   text-align: center;
+   line-height: 1.5em;
+   font-weight: bold;
+   margin-bottom: 30px;
+ }
+
+.work-entry{
+  margin: 30px 0px;
+  width: 100%;
+  height: auto;
+  overflow-wrap: break-word;
+}
+
+.work-title {
+  margin: 5px 0px;
+  color: white;
+  font-size: 26px;
+  text-align: left;
+}
+
+.work-date{
+  color:white;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.2em;
+}
+
+.work-description{
+  margin: 7px 0px;
+  color:white;
+  font-size: 16px;
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 10px;
+}
+
+.work-description > li {
+  display: list-item;
+  line-height: 140%;
+}

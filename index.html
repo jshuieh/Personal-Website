@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Julia Shuieh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="cool-icon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
@@ -17,6 +14,17 @@
       <a href="index.html">Julia Shuieh</a>
     </div>
     <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
       <div class="page"><a href="about.html">About</a></div>
       <div class="page"><a href="">Education</a></div>
       <div class="page"><a href="experience.html">Experience</a></div>
@@ -24,14 +32,14 @@
       <div class="page"><a href="skills.html">Skills</a></div>
       <div class="page"><a href="contact.html">Contact</a></div>
     </div>
-   </div>
-	<div class="container">
-    <img src="pic.jpg" alt="City" style="width:100%; max-height: calc(100vh - 75px); height:auto;">
+  </div>
+	<div class="container-img">
+    <img src="pic.jpg" alt="City" style="width:100%; max-height: calc(100vh - 75px); z-index: -1000; height:auto;">
     <div class="centered">
       <div class="hi">Hi, I'm Julia.</div>
     </div>
   </div>
-  <div class="container">
+  <div class="container container-about">
     <div class="rectangle-about">
       <div class="about">I'm an uprising sophomore in Carnegie Mellon's Artificial
         Intelligence program. I aspire to advance technology and our understanding of
@@ -49,16 +57,83 @@
   </div>
   <div class="container">
   	<div class="rectangle-education">
-	  <div class="education-heading">Education</div>
-	  <div class="grid-education">
-	    <div class="education-date">Aug 2019 - May 2023</div>
-	    <div class="education-school">Carnegie Mellon University</div>
-	    <div class="education-major">Bachelor's in Science: Artificial Intelligence</div>
-	    <div class="education-description">
-	      Some text
+	    <div class="education-heading">Education</div>
+	    <div class="grid-education">
+	      <div class="education-date">August 2019 - May 2023</div>
+	      <div class="education-school">Carnegie Mellon University</div>
+	      <div class="education-major">Bachelor's in Science: Artificial Intelligence</div>
+	      <div class="education-description">
+           Cumulative QPA: 3.66 / 4.00 <br>
+           Coursework: Imperative & Functional Programming, Concepts of AI, Theoretical Computer Science <br>
+           Extracurriculars: Doran's Lab, Game Creation Society, Society of Women Engineers
+        </div>
 	    </div>
-	  </div>
+      <div class="grid-education">
+        <div class="education-major">Minor in Psychology</div>
+        <div class="education-description">
+          Coursework: Cognitive Psychology, Experimental Design
+        </div>
+      </div>
+      <div class="extra-space"></div>
+      <div class="grid-education">
+        <div class="education-date">August 2015 - May 2019</div>
+        <div class="education-school">Cupertino High School</div>
+        <div class="education-major">High School Diploma</div>
+        <div class="education-description">
+          Unweighted GPA: 4.00 / 4.00 <br>
+          Honors: Class Valedictorian, National AP Scholar, Gold Award <br>
+          Extracurriculars: FIRST FRC Team 2473, Cupertino Game Dev Club, Mixed Martial Arts
+        </div>
+      </div>
     </div>
   </div>
-</body>
+  <div class="container">
+    <div class="rectangle-work">
+      <div class="work-heading">Work Experience</div>
+      <div class="work-entry">
+        <div class="work-title">EUC Software Engineering Intern - VMware</div>
+        <div class="work-date">June 2020 - August 2020</div>
+        <div class="work-description">
+          <li>Wrote Powershell scripts to create a modular framework for customizable automated testing of Horizon Agent builds</li>
+          <li>Used Azure CLI to manipulate Microsoft Azure resources, such as virtual machines and storage resources</li>
+          <li>Setup slave VM on Jenkins and created scheduled jobs to run daily tests with extensive logging of results and errors</li>
+          <li>Participated in regular meetings and actively reached out to managers about issues and improvements</li>
+          <li>Created a poster and video presentation to showcase project to colleagues</li>
+          <li>Maintained a focused and efficient workflow while working remotely</li>
+        </div>
+      </div>
+      <div class="work-entry">
+        <div class="work-title">Computer Science Instructor - Juni Learning</div>
+        <div class="work-date">January 2020 - Present</div>
+        <div class="work-description">
+          <li>Taught elementary and middle school students in weekly one-to-one and group classes</li>
+          <li>Used graphic design and game creation in Scratch and Python to teach various computer science concepts</li>
+          <li>Guide students through coding projects to enforce concepts and develop programming mindset</li>
+          <li>Help build resilience and grit in students by encouraging experimentation and providing problem-solving strategies</li>
+          <li>Ensuring students' understanding of material by using reviews and providing detailed explanations beyond curriculum</li>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+
+  </body>
 </html>
