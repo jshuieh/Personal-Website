@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julia Shuieh - Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style\education.css">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="title">
+      <a href="index.html">Julia Shuieh</a>
+    </div>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="about.html">About</a></div>
+      <div class="page"><a href="education.html">Education</a></div>
+      <div class="page"><a href="experience.html">Experience</a></div>
+      <div class="page"><a href="projects.html">Projects</a></div>
+      <div class="page"><a href="skills.html">Skills</a></div>
+      <div class="page"><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function openTab(tabName, tab) {
+      var i, tabcontent, tablinks;
+      tablinks = document.getElementsByClassName("tab-year");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.background = null;
+      }
+      document.getElementById(tab).style.background = "rgb(43, 43, 43)";
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+  </script>
+
+  </body>
+</html>

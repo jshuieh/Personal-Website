@@ -1,0 +1,48 @@
+@import "style.css";
+
+.container-about {
+  z-index: -1000;
+  width: 100%;
+  height: auto;
+  background-color: #020202;
+  position: relative;
+  display:flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.left {
+  padding: 125px 0vw;
+  margin: 0px;
+  z-index: -1000;
+  width: 20%;
+  height: auto;
+  background-color: #020202;
+  overflow-wrap: break-word;
+  flex: 1;
+}
+
+.right {
+  margin: 0px;
+  z-index: -1000;
+  width: 50%;
+  height: auto;
+  background-color: #020202;
+  flex: 1;
+}
+
+.about-heading {
+  color:white;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.3em;
+  margin: 0px 5vw;
+}

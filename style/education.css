@@ -1,0 +1,17 @@
+@import "style.css";
+
+.tabs {
+    width: 45%;
+    margin-left: 15%;
+    overflow: hidden;
+    background-color: black;
+}
+.tab {
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 25%;
+    height: 40px;
+}

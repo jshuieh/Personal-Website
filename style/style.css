@@ -31,7 +31,6 @@ Navigation bar
 	height: 75px;
 	margin: 0;
 	background: #000000;
-	position: sticky;
 	top: 0;
 }
 
@@ -195,7 +194,7 @@ Dropdown
   width: 100%;
   height: 100px;
   text-align: center;
-  padding: 25px;
+  padding: 25px 0px;
 }
 
 .container-social {
