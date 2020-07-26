@@ -1,10 +1,14 @@
 @import "style.css";
 
+p {
+  display: block;
+}
+
 .tabs {
-    width: 45%;
+    width: 22%;
     margin-left: 15%;
     overflow: hidden;
-    background-color: black;
+    background-color: #101010;
 }
 .tab {
     text-align: center;
@@ -12,6 +16,104 @@
     float: left;
     transition: all 0.5s;
     cursor: pointer;
-    width: 25%;
+    width: 50%;
     height: 40px;
+}
+
+.tab:hover {
+  transition: all 0.5s;
+  background-color: #242424;
+}
+
+.tab-text {
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+
+.tab-content {
+  width: 80%;
+  margin-left: 10%;
+  overflow: hidden;
+  background-color: #101010;
+  padding-bottom: 30px;
+}
+
+.tab-content > #sem {
+  width: 50%;
+  float: left;
+}
+
+.tab-content > #sem > p {
+  margin-bottom: 30px;
+}
+
+.sem-title > .sem-title-text {
+  float: none;
+  text-align: left;
+  margin-left: 10%;
+  width: 60%;
+  color: white;
+  font-size: 15px;
+}
+
+#underline {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 0.7px;
+  background-color: grey;
+}
+
+.course {
+  overflow: auto;
+  padding-top: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display:block;
+}
+
+.course:hover {
+  transition: all 0.5s;
+  background-color: #050505;
+}
+
+.course > .name {
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  width: 63%;
+  margin-left: 10%;
+  margin-bottom: 0;
+  float: left;
+  margin-top: 0px;
+}
+
+.course > .subject {
+  color: grey;
+  text-align: right;
+  float: left;
+  font-size: 15px;
+  width: 17%;
+  margin-left: 0%;
+  margin-right: 10%;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+
+.course > .description {
+  position: relative;
+  float: left;
+  font-size: 12px;
+  color: #BBBBBB;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  width: auto;
+  text-align: left;
 }
