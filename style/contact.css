@@ -1,0 +1,59 @@
+@import "style.css";
+
+.container-contact {
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - 275px);
+  background-color: #020202;
+  position: relative;
+  display:flex;
+  padding-top: 50px;
+  margin: 0px;
+}
+
+.left {
+  z-index: 1;
+  padding-top: 150px;
+  margin: 0px;
+  height: auto;
+  background-color: #020202;
+  overflow-wrap: break-word;
+  flex: 1;
+  text-align: center;
+}
+
+.right {
+  margin: 0px;
+  padding-left: 0%;
+  height: auto;
+  background-color: #020202;
+  flex: 1;
+  width: 50%;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.contact-email {
+  text-align: center;
+  font-size: 24px;
+  color: #D0D0D0;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  opacity: 0.7;
+}
+
+.contact-content {
+  text-align: center;
+  font-size: 22px;
+  color: #F1F1F1;
+  margin: 20px 10vw;
+}

@@ -59,7 +59,7 @@
 .education-date{
   grid-area: date;
   font-size: 18px;
-  color:white;
+  color: #D0D0D0;
   text-align: right;
   margin-top: 6px;
 }
@@ -73,7 +73,7 @@
 
 .education-major{
   grid-area: major;
-  font-size: 24px;
+  font-size: 28px;
   color: white;
   text-align: left;
   float: left;
@@ -92,7 +92,7 @@
 .education-description{
   grid-area: description;
   font-size: 18px;
-  color: white;
+  color: #F0F0F0;
   text-align: left;
   margin-top: 3px;
   line-height: 150%;
@@ -152,7 +152,7 @@
 }
 
 .work-date{
-  color:white;
+  color: #D0D0D0;
   font-size: 18px;
   text-align: left;
   line-height: 1.2em;
@@ -160,11 +160,11 @@
 
 .work-description{
   margin: 7px 0px;
-  color:white;
   font-size: 16px;
   text-align: left;
-  list-style-type: disc;
+    list-style-type: disc;
   padding-left: 10px;
+  color: #F0F0F0;
 }
 
 .work-description > li {

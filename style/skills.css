@@ -1,0 +1,89 @@
+@import "style.css";
+
+.skills-title {
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: block;
+}
+
+.skills-subtitle {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  display: block;
+}
+
+.skill-container {
+  width: 70%;
+  display: block;
+  margin-left: 20%;
+  margin-right: 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.left {
+  width: 47%;
+  float: left;
+  display: block;
+}
+
+.right {
+  width: 47%;
+  float: left;
+  display: block;
+  margin-left: 6%;
+}
+
+.skill {
+  height: 75px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: block;
+  width: 100%;
+  background-color: black;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+.skill > .icon {
+  height: 90%;
+  float: left;
+  border-style: outset;
+  border-width: 2px;
+  border-color: gray;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill > .name {
+  text-align: left;
+  font-size: 28px;
+  width: 75%;
+  float: left;
+  margin-left: 4%;
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+.skill > .description {
+  text-align: left;
+  margin-top: 5px;
+  font-size: 14px;
+  float: left;
+  color: #D0D0D0;
+  display: block;
+  margin-left: 4%;
+  width: 75%;
+}

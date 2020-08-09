@@ -4,8 +4,15 @@ p {
   display: block;
 }
 
+.education-title {
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
 .tabs {
-    width: 22%;
     margin-left: 15%;
     overflow: hidden;
     background-color: #101010;
@@ -16,8 +23,21 @@ p {
     float: left;
     transition: all 0.5s;
     cursor: pointer;
-    width: 50%;
     height: 40px;
+}
+
+.two-tabs {
+  width: 22%;
+}
+.two-tab {
+  width: 50%;
+}
+
+.three-tabs {
+  width: 33%;
+}
+.three-tab {
+  width: 33.33%;
 }
 
 .tab:hover {
@@ -116,4 +136,87 @@ p {
   margin-left: 10%;
   width: auto;
   text-align: left;
+}
+
+.school {
+  height: 100px;
+  left: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15%;
+  display: block;
+}
+
+.school > .icon {
+  height: 100%;
+  float: left;
+  border-style: outset;
+  border-width: 5px;
+  border-color: gray;
+  display: block;
+}
+
+.school > .name {
+  text-align: left;
+  font-size: 32px;
+  width: 75%;
+  float: left;
+  margin-left: 3%;
+  color: white;
+  display: block;
+  margin-top: 5px;
+}
+
+.school > .date {
+  text-align: left;
+  font-size: 22px;
+  width: 75%;
+  float: left;
+  margin-left: 3%;
+  color: #DDDDDD;
+  display: block;
+  margin-top: 0px;
+}
+
+.school > .gpa {
+  text-align: left;
+  font-size: 18px;
+  width: 75%;
+  float: left;
+  margin-left: 3%;
+  color: #D0D0D0;
+  display: block;
+  margin-top: 5px;
+}
+
+.major {
+  height: 60px;
+  left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20%;
+  display:block;
+  width: 100%;
+}
+
+.major > .icon {
+  height: 100%;
+  float: left;
+  border-style: outset;
+  border-width: 3px;
+  border-color: gray;
+  display: block;
+}
+
+.major > .name {
+  text-align: left;
+  font-size: 26px;
+  width: 50%;
+  float: left;
+  margin-left: 2%;
+  color: white;
+  display: block;
+  margin-top: 0px;
+  height: 100%;
+  line-height: 60px;
 }

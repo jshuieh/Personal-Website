@@ -3,31 +3,66 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact - Julia's Personal Website</title>                           <!-- Give Title -->
+    <title>Julia Shuieh - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">  <!-- Insert StyleSheet -->
-    <link rel="icon" href="cool-icon.png">                    <!-- Insert Icon -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style\contact.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
   <div class="nav-bar">
     <div class="title">
       <a href="index.html">Julia Shuieh</a>
-		</div>
-		<div class="element">
-			<div class="page"><a href="about.html">About</a></div>
-      <div class="page"><a href="">Education</a></div>
-      <div class="page"><a href="experience.html">Experience</a></div>
-  		<div class="page"><a href="projects.html">Projects</a></div>
-		  <div class="page"><a href="skills.html">Skills</a></div>
-		  <div class="page"><a href="contact.html">Contact</a></div>
     </div>
-	</div>
-	<div class="welcome">
-		<h1 style="text-align:center;">Contact me!</h1>
-		<p>Email: <a href="mailto:julia.shuieh@gmail.com">julia.shuieh@gmail.com</a></p>
-		<p>LinkedIn: <a href="https://www.linkedin.com/in/juliashuieh/">Julia Shuieh</a></p>
-	</div>
-</body>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="about.html">About</a></div>
+      <div class="page"><a href="education.html">Education</a></div>
+      <div class="page"><a href="experience.html">Experience</a></div>
+      <div class="page"><a href="projects.html">Projects</a></div>
+      <div class="page"><a href="skills.html">Skills</a></div>
+      <div class="page"><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+  <div class="container-contact">
+    <div class="left">
+      <div class="contact-title">Contact Me!</div>
+      <div class="contact-content">Feel free to contact me for anything, whether to work with me or just to know me better! You can send me an email at</div>
+      <a href="mailto:julia.shuieh@gmail.com" class="contact-email">julia.shuieh@gmail.com</a>
+      <div class="contact-content">or add me on the social media sites below!</div>
+    </div>
+    <div class="right">
+      <img src="images\contact.jpg" alt="Email" style="width:100%; object-fit: cover; object-position: 50%; height: 100%;">
+    </div>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+  </body>
+</html>

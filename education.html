@@ -6,6 +6,7 @@
     <title>Julia Shuieh - Education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style\education.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -33,16 +34,36 @@
       <div class="page"><a href="contact.html">Contact</a></div>
     </div>
   </div>
+  <div class="container" style="padding-top: 75px;">
+    <div class="education-title">Education</div>
+  </div>
   <div class="container">
-    <div class="tabs">
-      <div class="tab" id="year1-tab" onclick="openTab('year1', 'year1-tab')" style="background-color: #242424;">
+    <div class="school">
+      <img src="images\edu\cmulogo.png" class="icon">
+      <div class="name">Carnegie Mellon University</div>
+      <div class="date">Aug 2019 - May 2023</div>
+      <div class="gpa">3.66 GPA</div>
+    </div>
+    <div class="major">
+      <img src="images\edu\ai.png" class="icon">
+      <div class="name">Bachelor's of Science: Artificial Intelligence</div>
+    </div>
+    <div class="major">
+      <img src="images\edu\psych.png" class="icon">
+      <div class="name">Minor in Psychology</div>
+    </div>
+  </div>
+  </div>
+  <div class="container" style="padding-top: 30px; padding-bottom: 20px; text-align: center;">
+    <div class="tabs two-tabs">
+      <div class="tab two-tab" id="year1-tab" onclick="openTab('year1', 'year1-tab', 'two-tab', 'cmu')" style="background-color: #242424;">
         <p class="tab-text">'19 - '20</p>
       </div>
-      <div class="tab" id="year2-tab" onclick="openTab('year2', 'year2-tab')">
+      <div class="tab two-tab" id="year2-tab" onclick="openTab('year2', 'year2-tab', 'two-tab', 'cmu')">
         <p class="tab-text">'20 - '21</p>
       </div>
     </div>
-    <div class = "tab-content" id="year1" style="display:block;">
+    <div class="tab-content cmu" id="year1" style="display:block;">
       <div id="sem">
         <p></p>
         <div class="sem-title">
@@ -113,7 +134,7 @@
         </a>
       </div>
     </div>
-    <div class="tab-content" id="year2" style="display:none;">
+    <div class="tab-content cmu" id="year2" style="display:none;">
       <div id="sem">
         <p></p>
         <div class="sem-title">
@@ -148,6 +169,138 @@
       </div>
     </div>
   </div>
+  <div class="container" style="padding-top: 30px;">
+    <div class="school">
+      <img src="images\edu\dalogo.jpg" class="icon">
+      <div class="name">De Anza College</div>
+      <div class="date">Jun 2017 - Jun 2019</div>
+      <div class="gpa">3.69 GPA</div>
+    </div>
+    <div class="school">
+      <img src="images\edu\wvlogo.jpg" class="icon">
+      <div class="name">West Valley College</div>
+      <div class="date">Aug 2018 - Dec 2018</div>
+      <div class="gpa">4.00 GPA</div>
+    </div>
+  </div>
+  <div class="container" style="padding-top: 30px; padding-bottom: 40px;">
+    <div class="tabs three-tabs">
+      <div class="tab three-tab" id="da-year1-tab" onclick="openTab('da-year1', 'da-year1-tab', 'three-tab', 'da')" >
+        <p class="tab-text">'16 - '17</p>
+      </div>
+      <div class="tab three-tab" id="da-year2-tab" onclick="openTab('da-year2', 'da-year2-tab', 'three-tab', 'da')">
+        <p class="tab-text">'17 - '18</p>
+      </div>
+      <div class="tab three-tab" id="da-year3-tab" onclick="openTab('da-year3', 'da-year3-tab', 'three-tab', 'da')" style="background-color: #242424;">
+        <p class="tab-text">'18 - '19</p>
+      </div>
+    </div>
+    <div class="tab-content da" id="da-year1" style="display:none;">
+      <div id="sem" style="height: 100px;"></div>
+      <div id="sem">
+        <p></p>
+        <div class="sem-title">
+          <p class="sem-title-text">Summer 2017</p>
+          <div id="underline"></div>
+        </div>
+        <a href="syllabus\SyllabusPSYC1.pdf" target="_blank" class="course">
+          <p class="name">General Psychology</p>
+          <p class="subject">PSYCH</p>
+          <p class="description">Social Behavior, Emotion, Personality, Intelligence</p>
+        </a>
+        <a href="syllabus\SyllabusKNES14E.pdf" target="_blank" class="course">
+          <p class="name">Cardiovascular & Strength Training</p>
+          <p class="subject">GEN ED</p>
+          <p class="description">Aerobic and Anaerobic Training, Multi-Phasic Planning</p>
+        </a>
+      </div>
+    </div>
+    <div class="tab-content da" id="da-year2" style="display:none;">
+      <div id="sem">
+        <p></p>
+        <div class="sem-title">
+          <p class="sem-title-text">Spring 2018</p>
+          <div id="underline"></div>
+        </div>
+        <a href="syllabus\SyllabusCIS22A.pdf" target="_blank" class="course">
+          <p class="name">Beginning Programming Methodologies in C++</p>
+          <p class="subject">CS</p>
+          <p class="description">OOP in C++, Constructs, Pointers, Structures, Classes</p>
+        </a>
+        <a href="syllabus\SyllabusHIST18B.pdf" target="_blank" class="course">
+          <p class="name">African American History Since 1865</p>
+          <p class="subject">GEN ED</p>
+          <p class="description">US History After the Civil War</p>
+        </a>
+      </div>
+      <div id="sem">
+        <p></p>
+        <div class="sem-title">
+          <p class="sem-title-text">Summer 2018</p>
+          <div id="underline"></div>
+        </div>
+        <a href="syllabus\SyllabusCIS22B.pdf" target="_blank" class="course">
+          <p class="name">Intermediate Programming Methodologies in C++</p>
+          <p class="subject">CS</p>
+          <p class="description">OOP in C++, Construction and Management of Programs</p>
+        </a>
+      </div>
+    </div>
+    <div class="tab-content da" id="da-year3" style="display:block;">
+      <div id="sem">
+        <p></p>
+        <div class="sem-title">
+          <p class="sem-title-text">Fall / Winter</p>
+          <div id="underline"></div>
+        </div>
+        <a href="syllabus\SyllabusCIS29.pdf" target="_blank" class="course">
+          <p class="name">Advanced C++ Programming</p>
+          <p class="subject">CS</p>
+          <p class="description">Templates, Lambda Expressions, STL Containers/Algorithms</p>
+        </a>
+        <a href="http://voyager.deanza.edu/~oldham/cis41a-Python/index.html" target="_blank" class="course">
+          <p class="name">Python Programming</p>
+          <p class="subject">CS</p>
+          <p class="description">OOP in Python, Regular Expressions</p>
+        </a>
+        <a href="syllabus\SyllabusMATH4A.pdf" target="_blank" class="course">
+          <p class="name">Intermediate Calculus</p>
+          <p class="subject">MATH</p>
+          <p class="description">Multivariable Calculus, Vector-Valued Functions</p>
+        </a>
+        <a href="syllabus\SyllabusMATH2B.pdf" target="_blank" class="course">
+          <p class="name">Linear Algebra</p>
+          <p class="subject">MATH</p>
+          <p class="description">Linear Systems and Models, Matrices, Vector Spaces</p>
+        </a>
+      </div>
+      <div id="sem">
+        <p></p>
+        <div class="sem-title">
+          <p class="sem-title-text">Spring 2019</p>
+          <div id="underline"></div>
+        </div>
+        <a href="syllabus\SyllabusCIS22C.pdf" target="_blank" class="course">
+          <p class="name">Data Abstraction and Structures</p>
+          <p class="subject">CS</p>
+          <p class="description">Stacks, Queues, Linked Lists, Trees, Graphs, Hash Tables, Sorts</p>
+        </a>
+        <a href="syllabus\SyllabusMATH22.pdf" target="_blank" class="course">
+          <p class="name">Discrete Mathematics</p>
+          <p class="subject">MATH</p>
+          <p class="description">Proofs, Induction, Sets, Relations, Graphs, Combinatorics</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="padding-bottom: 50px;">
+    <div class="school">
+      <img src="images\edu\chslogo.png" class="icon">
+      <div class="name">Cupertino High School</div>
+      <div class="date">Aug 2015 - Jun 2019</div>
+      <div class="gpa">4.00 GPA</div>
+    </div>
+  </div>
   <div class="container">
     <div class="rectangle-footer"></div>
     <div class="centered">
@@ -167,28 +320,14 @@
       document.getElementById("myDropdown").classList.toggle("show");
     }
 
-    function openTab(tabName, tab) {
+    function openTab(tabName, tab, tabClass, contentClass) {
       var i, tabcontent, tablinks;
-      tablinks = document.getElementsByClassName("tab-year");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.background = null;
-      }
-      document.getElementById(tab).style.background = "rgb(43, 43, 43)";
-      tabcontent = document.getElementsByClassName("tab-content");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      document.getElementById(tabName).style.display = "block";
-    }
-
-    function openTab(tabName, tab) {
-      var i, tabcontent, tablinks;
-      tablinks = document.getElementsByClassName("tab");
+      tablinks = document.getElementsByClassName(tabClass);
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.background = null;
       }
       document.getElementById(tab).style.background = "#242424";
-      tabcontent = document.getElementsByClassName("tab-content");
+      tabcontent = document.getElementsByClassName(contentClass);
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }

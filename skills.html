@@ -3,12 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Julia's Personal Website</title>                           <!-- Give Title -->
+    <title>Julia Shuieh - Skills</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">  <!-- Insert StyleSheet -->
-    <link rel="icon" href="cool-icon.png">                    <!-- Insert Icon -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style\skills.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -17,37 +15,298 @@
       <a href="index.html">Julia Shuieh</a>
     </div>
     <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
       <div class="page"><a href="about.html">About</a></div>
-      <div class="page"><a href="">Education</a></div>
+      <div class="page"><a href="education.html">Education</a></div>
       <div class="page"><a href="experience.html">Experience</a></div>
       <div class="page"><a href="projects.html">Projects</a></div>
       <div class="page"><a href="skills.html">Skills</a></div>
       <div class="page"><a href="contact.html">Contact</a></div>
     </div>
-   </div>
-	<h1 style="text-align:center;">My Skills</h1>
-	<div class="welcome">
-	<h3>Computer Science Skills</h3>
-	<ul>
-		<li>C/C++</li>
-		<li>C#</li>
-		<li>Java</li>
-		<li>Python</li>
-		<li>Lua</li>
-		<li>SML</li>
-		<li>R</li>
-		<li>Unity</li>
-		<li>GitHub</li>
-		<li>Raspberry Pi</li>
-	</ul>
-	<h3>Soft Skills</h3>
-	<ul>
-		<li>Leadership and Management</li>
-		<li>Customer Service</li>
-		<li>Food Preparation</li>
-		<li>Teaching</li>
-		<li>Communication</li>
-		<li>Mandarin Chinese</li>
-	</ul>
-	</div>
-</body>
+  </div>
+  <div class="container" style="padding-top: 40px; padding-bottom: 50px;">
+    <div class="skills-title">My Skills</div>
+    <div class="skills-subtitle">Languages</div>
+
+    <div class="skill-container">
+      <div class="left">
+        <div class="skill">
+          <img src="images\skills\c.png" class="icon">
+          <div class="name">C/C++</div>
+          <div class="description">Imperative Programming • Data Structures • STL</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\c-sharp.png" class="icon">
+          <div class="name">C#</div>
+          <div class="description">Video Game Scripts • UI Automation</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\powershell.png" class="icon">
+          <div class="name">PowerShell</div>
+          <div class="description">Test Automation Scripts • UI Automation</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\smlnj.png" class="icon">
+          <div class="name">SMLNJ</div>
+          <div class="description">Functional Programming</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\julia.png" class="icon">
+          <div class="name">Julia</div>
+          <div class="description">Linear Algebra</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\html.png" class="icon">
+          <div class="name">HTML/CSS</div>
+          <div class="description">Creating Websites</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\latex.png" class="icon">
+          <div class="name">LaTeX</div>
+          <div class="description">Document Design • Writing Proofs</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="skill">
+          <img src="images\skills\java.png" class="icon">
+          <div class="name">Java</div>
+          <div class="description">Robot Controls • JavaFX • WPILib</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\python.png" class="icon">
+          <div class="name">Python</div>
+          <div class="description">AI • Data Analysis • NumPy • Matplotlib • Pandas • Tkinter</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\r.png" class="icon">
+          <div class="name">R</div>
+          <div class="description">Data Analysis</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\lua.png" class="icon">
+          <div class="name">Lua</div>
+          <div class="description">Video Game Scripts</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\json.png" class="icon">
+          <div class="name">JSON</div>
+          <div class="description">Video Game Data</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\scratch.png" class="icon">
+          <div class="name">Scratch</div>
+          <div class="description">Block-based Programming for Teaching</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-subtitle">Tool/Technologies</div>
+
+    <div class="skill-container">
+      <div class="left">
+        <div class="skill">
+          <img src="images\skills\azure.png" class="icon">
+          <div class="name">Microsoft Azure</div>
+          <div class="description">Azure CLI • VMs • Storage</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\jenkins.png" class="icon">
+          <div class="name">Jenkins</div>
+          <div class="description">Scheduled Builds • Test Suites</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\git.png" class="icon">
+          <div class="name">Git</div>
+          <div class="description">Version Control • Integrating Features</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\rasp.png" class="icon">
+          <div class="name">Raspberry Pi</div>
+          <div class="description">Robotics • TV Display</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\arduino.png" class="icon">
+          <div class="name">Arduino</div>
+          <div class="description">Button Wiring</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="skill">
+          <img src="images\skills\studio.png" class="icon">
+          <div class="name">Microsoft Visual Studio</div>
+          <div class="description">C++/C# Scripts • Test Scripts</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\eclipse.png" class="icon">
+          <div class="name">Eclipse</div>
+          <div class="description">Java Scripts</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\unity.png" class="icon">
+          <div class="name">Unity</div>
+          <div class="description">2D and 3D Game Development</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\love.png" class="icon">
+          <div class="name">LOVE2D</div>
+          <div class="description">2D Game Development</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-subtitle">Computer Science Related Skills</div>
+
+    <div class="skill-container">
+      <div class="left">
+        <div class="skill">
+          <img src="images\skills\data.png" class="icon">
+          <div class="name">Data Analysis</div>
+          <div class="description">Manipulating Data Tables • Creating Visuals</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\research.png" class="icon">
+          <div class="name">Research</div>
+          <div class="description">Developing Questions</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\game.png" class="icon">
+          <div class="name">Game Development</div>
+          <div class="description">Design • Writing • Programming</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="skill">
+          <img src="images\skills\project.png" class="icon">
+          <div class="name">Project Management</div>
+          <div class="description">Task Delegation • Training • Cross-team Coordination</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\test.png" class="icon">
+          <div class="name">Test Automation</div>
+          <div class="description">Installation Tests • Verification</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-subtitle">Soft Skills</div>
+    <div class="skill-container">
+      <div class="left">
+        <div class="skill">
+          <img src="images\skills\leader.png" class="icon">
+          <div class="name">Leadership</div>
+          <div class="description">Decision Making • Mentoring</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\problem.png" class="icon">
+          <div class="name">Problem Solving</div>
+          <div class="description">Finding Solutions Quickly</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\learner.png" class="icon">
+          <div class="name">Quick Learner</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\detail.png" class="icon">
+          <div class="name">Attention to Detail</div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="skill">
+          <img src="images\skills\teamwork.png" class="icon">
+          <div class="name">Teamwork</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\communication.png" class="icon">
+          <div class="name">Communication</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\adapt.png" class="icon">
+          <div class="name">Adaptability</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\time.png" class="icon">
+          <div class="name">Time Management</div>
+        </div>
+      </div>
+    </div>
+    <div class="skills-subtitle">Other</div>
+    <div class="skill-container">
+      <div class="left">
+        <div class="skill">
+          <img src="images\skills\teacher.png" class="icon">
+          <div class="name">Teaching</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\video.png" class="icon">
+          <div class="name">Video Editing</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\ad.png" class="icon">
+          <div class="name">Advertising</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\chinese.png" class="icon">
+          <div class="name">Mandarin Chinese</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="skill">
+          <img src="images\skills\food.png" class="icon">
+          <div class="name">Food Preparation</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\customer.png" class="icon">
+          <div class="name">Customer Service</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\cert.jpg" class="icon">
+          <div class="name">Emergency Preparedness</div>
+        </div>
+        <div class="skill">
+          <img src="images\skills\cpr.jpg" class="icon">
+          <div class="name">CPR/AED</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function openContent(con) {
+      var e = document.getElementById(con);
+      if (e.style.display == "block") {
+        e.style.display = "none";
+      } else {
+        e.style.display = "block";
+      }
+    }
+  </script>
+  </body>
+</html>

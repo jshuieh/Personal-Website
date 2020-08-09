@@ -1,0 +1,95 @@
+@import "style.css";
+
+.exp-title {
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  width: 70%;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.exp {
+  height: 100px;
+  left: 50%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: block;
+  width: 70%;
+  background-color: #151515;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+
+.exp:hover {
+  background-color: #101010;
+}
+
+.exp > .icon {
+  height: 85%;
+  float: left;
+  border-style: outset;
+  border-width: 3px;
+  border-color: gray;
+  display: block;
+  margin-left: 2%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.exp > .name {
+  text-align: left;
+  font-size: 28px;
+  width: 80%;
+  float: left;
+  margin-left: 3%;
+  color: white;
+  display: block;
+  margin-top: 5px;
+}
+
+.exp >  .date {
+  text-align: left;
+  font-size: 20px;
+  float: left;
+  width: 80%;
+  margin-left: 3%;
+  color: #DDDDDD;
+  display: block;
+  margin-top: 5px;
+}
+
+.exp > .summary {
+  text-align: left;
+  margin-top: 5px;
+  font-size: 14px;
+  width: 80%;
+  float: left;
+  color: #D0D0D0;
+  display: block;
+  margin-left: 3%;
+  width: 80%;
+}
+
+.exp-content {
+  width: 67%;
+  display: none;
+  background-color: #0D0D0D;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  left: 50%;
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 2%;
+  padding-right: 1%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.exp-content > li {
+  display: list-item;
+  font-size: 16px;
+  color: #F2F2F2;
+  line-height: 120%;
+}

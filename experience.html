@@ -3,86 +3,148 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Experience - Julia's Personal Website</title>                           <!-- Give Title -->
+    <title>Julia Shuieh - Experience</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">  <!-- Insert StyleSheet -->
-    <link rel="icon" href="cool-icon.png">                    <!-- Insert Icon -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style\experience.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
   <div class="nav-bar">
     <div class="title">
       <a href="index.html">Julia Shuieh</a>
-		</div>
-		<div class="element">
-			<div class="page"><a href="about.html">About</a></div>
-      <div class="page"><a href="">Education</a></div>
-      <div class="page"><a href="experience.html">Experience</a></div>
-  		<div class="page"><a href="projects.html">Projects</a></div>
-		  <div class="page"><a href="skills.html">Skills</a></div>
-		  <div class="page"><a href="contact.html">Contact</a></div>
     </div>
-	 </div>
-	<div class="welcome">
-    	<h1 style="text-align:center;">Computer Science Experience</h1>
-    	<h3>Computer Science Instructor - Juni Learning</h3>
-        <p>Jan 2020 - Present</p>
-    	<ul>
-    		<li>Teach elementary to high school students computer science concepts, such as Scratch and Python, in weekly online lessons.</li>
-    		<li>Maintain high-quality teaching and professionalism.</li>
-    		<li>Help students build resilience and grit with their coding skills.</li>
-    		<li>Go beyond curriculum and teaching tools to maximize students' understanding.</li>
-    	</ul>
-    	<h3>Organization Head - CMU Doran's Lab</h3>
-        <p>Oct 2019 - Present</p>
-    	<ul>
-    		<li>Analyzed large volumes of data related to or from League of Legends.</li>
-    		<li>Implemented statistical and predictive models to answer research questions.</li>
-    		<li>Organize meetings and establish research group as an official club.</li>
-    		<li>Maintain effective communication with other leaders and branches of Doran's Lab.</li>
-    		<li>Help establish new systems to increase interaction and productivity in meetings.</li>
-    	</ul>
-    	<h3>Programmer - CMU Game Creation Society</h3>
-        <p>Sep 2019 - Present</p>
-    	<ul>
-    		<li>Help write code for game projects in a team to showcase at the end of the semester.</li>
-    		<li>Octave: helped program UI, JSON database, and other gameplay features in Lua using LOVE2D.</li>
-            <li>Bypass: in progress</li>
-    	</ul>
-    	<h3>FRC Software Subteam Project Lead - Cupertino Robotics</h3>
-        <p>Oct 2016 - Jun 2019</p>
-    	<ul>
-    		<li>Programmed robot driving code with joystick controls for FRC competition.</li>
-    		<li>Collected and analyzed LiDAR sensor data for corner detection.</li>
-    		<li>Designed robot code architecture to ensure safe error handling during run time.</li>
-    		<li>Programmed testing code to ensure all robot parts were connected and running before each match.</li>
-    		<li>Designed and programmed interactive display to showcase robot features and interest judges, guests, other teams.</li>
-    		<li>Led project and assigned tasks to various members, ensuring project was on schedule.</li>
-    		<li>Helped guide new team members to train and integrate them to the organization.</li>
-    		<li>Communicated effectively with many different project teams to form a complete, coherent product.</li>
-    	</ul>
-    	<h3>Founding Member, Public Relations - Cupertino Game Development Club</h3>
-    	<p>Aug 2018 - Jun 2019</p>
-        <ul>
-    		<li>Used Unity and C# to create game projects.</li>
-    		<li>Planned workshops and events to develop students' skills in game development.</li>
-    		<li>Designed social media and video advertising to promote club interest.</li>
-    		<li>Mentored students to help produce full-fledged games for showcases.</li>
-    	</ul>
-    <h1 style="text-align:center;">Other Work Experience</h1>
-    <h3>Computing Services Help Center Assistant - Carnegie Mellon University</h3>
-    <p>Aug 2019 - Present</p>
-    <ul>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="about.html">About</a></div>
+      <div class="page"><a href="education.html">Education</a></div>
+      <div class="page"><a href="experience.html">Experience</a></div>
+      <div class="page"><a href="projects.html">Projects</a></div>
+      <div class="page"><a href="skills.html">Skills</a></div>
+      <div class="page"><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+	<div class="container" style="padding: 30px 15%; padding-bottom: 70px;">
+    <div class="exp-title">Computer Science Experience</div>
+    <div class="exp" onclick="openContent('vm')">
+      <img src="images\exp\vmware.png" class="icon">
+      <div class="name">EUC Software Engineering Intern - VMware</div>
+      <div class="date">Jun 2020 - Aug 2020</div>
+      <div class="summary">Test Automation • UI Automation • PowerShell • Microsoft Azure • Jenkins • Visual Studio Code • Git</div>
+    </div>
+    <div class="exp-content" id="vm">
+      <li>Wrote Powershell scripts to create a modular framework for customizable automated testing of Horizon Agent builds</li>
+      <li>Used Azure CLI to manipulate Microsoft Azure resources, such as virtual machines and storage resources</li>
+      <li>Setup slave VM on Jenkins and created scheduled jobs to run daily tests with extensive logging of results and errors</li>
+      <li>Participated in regular meetings and actively reached out to managers about issues and improvements</li>
+      <li>Created a poster and video presentation to showcase project to colleagues</li>
+      <li>Maintained a focused and efficient workflow while working remotely using sprints and tickets</li>
+    </div>
+    <div class="exp" onclick="openContent('juni')">
+      <img src="images\exp\juni.png" class="icon">
+      <div class="name">Computer Science Instructor - Juni Learning</div>
+      <div class="date">Jan 2020 - Present</div>
+      <div class="summary">Teaching Children • Python • Scratch • Communication</div>
+    </div>
+    <div class="exp-content" id="juni">
+      <li>Taught elementary and middle school students in weekly one-to-one and group classes</li>
+      <li>Used graphic design and game creation in Scratch and Python to teach various computer science concepts</li>
+      <li>Guide students through coding projects to enforce concepts and develop programming mindset</li>
+      <li>Help build resilience and grit in students by encouraging experimentation and providing problem-solving strategies</li>
+      <li>Ensuring students' understanding of material by using reviews and providing detailed explanations beyond curriculum</li>
+    </div>
+    <div class="exp" onclick="openContent('dorans')">
+      <img src="images\exp\dorans.png" class="icon">
+      <div class="name">Organization Head - CMU Doran's Lab</div>
+      <div class="date">Oct 2019 - Present</div>
+      <div class="summary">Data Science • Research • Leadership • Project Management • Python • Pandas • Teamwork • Communication • Organization</div>
+    </div>
+    <div class="exp-content" id="dorans">
+    	<li>Analyzed large volumes of data related to or from League of Legends.</li>
+    	<li>Implemented statistical and predictive models to answer research questions.</li>
+    	<li>Organize meetings and establish research group as an official club.</li>
+    	<li>Maintain effective communication with other leaders and branches of Doran's Lab.</li>
+    	<li>Help establish new systems to increase interaction and productivity in meetings.</li>
+    </div>
+    <div class="exp" onclick="openContent('gcs')">
+      <img src="images\exp\gcs.jpg" class="icon">
+      <div class="name">Programmer - CMU Game Creation Society</div>
+      <div class="date">Sep 2019 - Present</div>
+      <div class="summary">Game Development • User Interface • Lua • LOVE2D • JSON • C# • Unity • Git • Teamwork</div>
+    </div>
+    <div class="exp-content" id="gcs">
+    	<li>Help write code for game projects in a team to showcase at the end of the semester.</li>
+    	<li>Octave: helped program UI, JSON database, and other gameplay features in Lua using LOVE2D.</li>
+    </div>
+    <div class="exp" onclick="openContent('frc')">
+      <img src="images\exp\robo.png" class="icon">
+      <div class="name">FRC Software Subteam Project Lead - Cupertino Robotics</div>
+      <div class="date">Oct 2016 - Jun 2019</div>
+      <div class="summary">Project Management • Java • Python • WPILib • NumPy • SciPy • Matplotlib • Tkinter • Raspberry Pi • Arduino • Eclipse • Git • Teamwork</div>
+    </div>
+    <div class="exp-content" id="frc">
+    	<li>Programmed robot driving code with joystick controls for FRC competition.</li>
+    	<li>Collected and analyzed LiDAR sensor data for corner detection.</li>
+    	<li>Designed robot code architecture to ensure safe error handling during run time.</li>
+    	<li>Programmed testing code to ensure all robot parts were connected and running before each match.</li>
+    	<li>Designed and programmed interactive display to showcase robot features and interest judges, guests, other teams.</li>
+    	<li>Led project and assigned tasks to various members, ensuring project was on schedule.</li>
+    	<li>Helped guide new team members to train and integrate them to the organization.</li>
+    	<li>Communicated effectively with many different project teams to form a complete, coherent product.</li>
+    </div>
+    <div class="exp" onclick="openContent('gdc')">
+      <img src="images\exp\gdc.png" class="icon">
+      <div class="name">Founding Member, Public Relations - Cupertino Game Dev Club</div>
+      <div class="date">Aug 2018 - Jun 2019</div>
+      <div class="summary">Leadership • Game Development • Project Management • C# • Unity • Video Editing • Graphic Design • Advertising • Teamwork</div>
+    </div>
+    <div class="exp-content" id="gdc">
+    	<li>Used Unity and C# to create game projects.</li>
+    	<li>Planned workshops and events to develop students' skills in game development.</li>
+    	<li>Designed social media and video advertising to promote club interest.</li>
+    	<li>Mentored students to help produce full-fledged games for showcases.</li>
+    </div>
+    <div class="exp" onclick="openContent('ta')">
+      <img src="images\edu\chslogo.png" class="icon">
+      <div class="name">AP Computer Science Teacher's Assistant - Cupertino High School</div>
+      <div class="date">Aug 2018 - Jun 2019</div>
+      <div class="summary">Teaching • Mentoring • Code Review • Java • JavaFX</div>
+    </div>
+    <div class="exp-content" id="ta">
+      <li>Helped students understand computer science concepts taught in APCS.</li>
+      <li>Reviewed students' code and helped debug issues.</li>
+      <li>Graded worksheets and marked participation or attendence.</li>
+    </div>
+    <div class="exp-title" style="margin-top: 100px;">Other Work Experience</div>
+    <div class="exp" onclick="openContent('cmu')">
+      <img src="images\edu\cmulogo.png" class="icon">
+      <div class="name">Help Center Assistant - CMU Computing Services</div>
+      <div class="date">Aug 2019 - May 2020</div>
+      <div class="summary">Tech Help • Customer Service • Problem Solving • Communication • Documentation</div>
+    </div>
+    <div class="exp-content" id="cmu">
     	<li>Greet walk-in customers and conduct initial intake information.</li>
     	<li>Assist students and staff members with basic IT needs, including password management, networking, two-factor verification, email, and software installation.</li>
     	<li>Manage and update documentation in the form of tickets.</li>
     	<li>Review past tickets to ensure proper procedures were followed.</li>
-    </ul>
-    <h3>Front Counter, Cashier - Panda Express</h3>
-    <p>Aug 2017 - Aug 2019</p>
-    <ul>
+    </div>
+    <div class="exp" onclick="openContent('panda')">
+      <img src="images\exp\panda.png" class="icon">
+      <div class="name">Front Counter, Cashier - Panda Express</div>
+      <div class="date">Aug 2017 - Aug 2019</div>
+      <div class="summary">Customer Service • Management • Food Prep & Safety • Communication • Teamwork • Multitasking • Attention to Detail</div>
+    </div>
+    <div class="exp-content" id="panda">
     	<li>Maintained quality customer service during high-volume, fast-paced operations.</li>
     	<li>Followed procedures for safe food preparation, assembly, and presentation.</li>
     	<li>Handled cash and card transactions accurately using point-of-service computer system.</li>
@@ -90,26 +152,38 @@
     	<li>Restocked supplies and cleaned serving/dining areas according to regulations.</li>
     	<li>Helped train new workers and was person-in-charge when manager was absent.</li>
     	<li>Resolved complaints promptly and professionally.</li>
-    </ul>
-    <h3>Academic Camp Teacher - Kwan Academy</h3>
-    <p>Jun 2019 - Jul 2019</p>
-    <ul>
+    </div>
+    <div class="exp" onclick="openContent('kwan')">
+      <img src="images\exp\kwan.png" class="icon">
+      <div class="name">Academic Camp Teacher - Kwan Academy</div>
+      <div class="date">Jun 2019 - Jul 2019</div>
+      <div class="summary">Teaching Children • English • Algebra • Geometry</div>
+    </div>
+    <div class="exp-content" id="kwan">
     	<li>Tutored elementary and middle school students in English and mathematical concepts.</li>
     	<li>Explained strategies to solve problems and assessed students' understanding.</li>
     	<li>Went over mistakes and worked through problems with students.</li>
     	<li>Helped maintain their focus on work and ensure work was finished in a timely fashion.</li>
-    </ul>
-    <h3>Math Tutor - Brighter Future Learning Center</h3>
-    <p>Jan 2019 - May 2019</p>
-    <ul>
+    </div>
+    <div class="exp" onclick="openContent('bright')">
+      <img src="images\exp\bright.png" class="icon">
+      <div class="name">Math Tutor - Brighter Future Learning Center</div>
+      <div class="date">Jan 2019 - May 2019</div>
+      <div class="summary">Teaching Children • Algebra • Geometry • Statistics</div>
+    </div>
+    <div class="exp-content" id="bright">
     	<li>Tutored elementary through high school students in mathematical concepts, including algebra, geometry and statistics.</li>
     	<li>Explained strategies to solve problems, working through examples step-by-step.</li>
     	<li>Graded papers in a timely manner and went over mistakes in past work.</li>
     	<li>Kept track of progress and assessed their understandings with unit tests.</li>
-    </ul>
-    <h3>Team Member - Icebox</h3>
-    <p>Dec 2016 - Aug 2017</p>
-    <ul>
+    </div>
+    <div class="exp" onclick="openContent('ice')">
+      <img src="images\exp\ice.jpg" class="icon">
+      <div class="name">Team Member - Icebox</div>
+      <div class="date">Dec 2016 - Aug 2017</div>
+      <div class="summary">Customer Service • Management • Food Prep & Safety • Communication • Teamwork • Multitasking • Attention to Detail</div>
+    </div>
+    <div class="exp-content" id="ice">
     	<li>Prepared various ice cream-related desserts and tea drinks.</li>
     	<li>Handled cash and card transactions with point-of-service computer system.</li>
     	<li>Restocked supplies and prepared ingredients for food products.</li>
@@ -118,16 +192,47 @@
     	<li>Opened and closed store according to proper procedures, including handling tips and closing registers.</li>
     	<li>Assisted management with inventory control and stock ordering.</li>
     	<li>Communicated effectively with coworkers and management for day-to-day operations.</li>
-    </ul>
-    <h3>Tea Barista, Cashier - Tea & Magic Hand</h3>
-    <p>Jun 2016 - Aug 2016</p>
-    <ul>
+    </div>
+    <div class="exp" onclick="openContent('tea')">
+      <img src="images\exp\tea.png" class="icon">
+      <div class="name">Tea Barista, Cashier - Tea & Magic Hand</div>
+      <div class="date">Jun 2016 - Aug 2016</div>
+      <div class="summary">Customer Service • Mandarin • Management • Food Prep & Safety • Communication • Teamwork • Multitasking</div>
+    </div>
+    <div class="exp-content" id="tea">
     	<li>Prepared drinks from an extensive menu and served baked goods.</li>
     	<li>Restocked supplies and prepare ingredients.</li>
     	<li>Handled cash transactions and communicated to customers using Mandarin Chinese</li>
     	<li>Cleaned areas for food preparation.</li>
-    </ul>
     </div>
-	<script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
-</body>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function openContent(con) {
+      var e = document.getElementById(con);
+      if (e.style.display == "block") {
+        e.style.display = "none";
+      } else {
+        e.style.display = "block";
+      }
+    }
+  </script>
+  </body>
 </html>

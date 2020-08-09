@@ -1,7 +1,7 @@
 @import "style.css";
 
 .container-about {
-  z-index: -1000;
+  z-index: 0;
   width: 100%;
   height: auto;
   background-color: #020202;
