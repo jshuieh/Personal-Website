@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julia Shuieh - CC2017 LiDAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="..\style\page.css">
+    <link rel="shortcut icon" href="..\favicon.ico">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="title">
+      <a href="..\index.html">Julia Shuieh</a>
+    </div>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="..\about.html">About</a>
+          <a href="..\education.html">Education</a>
+          <a href="..\experience.html">Experience</a>
+          <a href="..\projects.html">Projects</a>
+          <a href="..\skills.html">Skills</a>
+          <a href="..\contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="..\about.html">About</a></div>
+      <div class="page"><a href="..\education.html">Education</a></div>
+      <div class="page"><a href="..\experience.html">Experience</a></div>
+      <div class="page"><a href="..\projects.html">Projects</a></div>
+      <div class="page"><a href="..\skills.html">Skills</a></div>
+      <div class="page"><a href="..\contact.html">Contact</a></div>
+    </div>
+  </div>
+  <div class="container" style="background-color:#040404; padding: 50px 15%;">
+    <div class="page-title">CC2017 LiDAR</div>
+    <div class="skills">Python • NumPy • SciPy • Matplotlib • LiDAR • Raspberry Pi • Data Analysis • Corner Detection</div>
+    <div class="date">Jun 2017 - Sep 2017</div>
+    <p>After the season passed, our team joined some pre-season competitions that used the past competition’s game to help new members
+      learn and get a feel of the workflow of projects. The 2017 FRC Competition, Steamworks, included a boiler at a corner of each
+      side of the game map, and robots can score points by shooting wiffle balls, or “fuel”, into the boiler. My team had just gotten
+      a fairly inexpensive LiDAR, so we wanted to use it to find the corner that the boiler was at and align the robot based on its
+      location. We also wanted to use it to determine the robot’s position on the field in general using SLAM.</p>
+    <img src="..\images\proj\lidar\cartesian-graph.PNG" class="pic" style="width: 50%; margin-left: 10%;">
+    <div class="subtitle">Cartesian graph of points detected by the LiDAR</div>
+    <p>For those who may not know, the LiDAR sensor uses a laser to measure distances. It continuously rotates and measures distances
+      for different angles. We had the Scanse Sweep LiDAR and used their library to operate the LiDAR in our Python scripts. We also
+      used NumPy and SciPy to perform mathematical analysis, and Matplotlib was used to plot graphs, such as for the data and mapping
+      the surroundings of the room. The LiDAR and our Python scripts were run on a Raspberry Pi as we would use one if we added the
+      LiDAR sensor on our robot.</p>
+    <p>First, we had to be able to detect corners in our surroundings. With the LiDAR, we can get a rough "top-down" view of our
+      surroundings. We converted the data to X-Y coordinates and used linear approximations to find linear sections, which would be
+      potential walls. Since the walls should be linear, the data points should have a constant slope until the LiDAR reaches an
+      obstacle or corner. As such, we used sudden changes in the slopes or derivative to pinpoint where the corners were. </p>
+    <img src="..\images\proj\lidar\distance-slope-graph.PNG" class="pic" style="width: 50%; margin-left: 10%;">
+    <div class="subtitle">Graph of points of distances and "slope" between points. V's in distance and abnormal slope values were corners.</div>
+    <img src="..\images\proj\lidar\corners.png" class="pic" style="width: 50%; margin-left: 10%;">
+    <div class="subtitle">Graph of area where program determined to contain corner(s)</div>
+    <p>Next, we had to be able to detect which corner was the boiler. The boiler had a very specific angle, so for each corner, we
+      calculated approximately the angle of the corner, and chose the corner that matched the boiler angle. Since we now knew where
+      the boiler was, we were able to automate robot movement so that the robot and the shooter would be perfectly aligned to the boiler.</p>
+    <img src="..\images\proj\lidar\corner.png" class="pic" style="width: 50%; margin-left: 10%;">
+    <div class="subtitle">Corner determined to be the boiler corner due to wider angle</div>
+    <p>We also mapped the immediate surroundings of the robot, plotting it on a graph, including the direction and position of the robot
+      in the graph. With this, the driver would have a top-down view of the robot’s surroundings, similar to a mini-map in video games.</p>
+    <p>In the end, we were successfully able to determine the boiler corner and navigate the robot to align to it. Unfortunately, we
+      were not able to use this in the pre-season competition. We found out, after testing, that the robot was able to navigate to
+      roughly the ideal point, but when the robot was close enough, the LiDAR sensor was not precise enough to have the robot stop at
+      the exact point. If we had a sensor that was more accurate and could take more data points, it would have been better, but what we
+      had was still usable. However, in the end, our team did not successfully build a shooter for the boiler fuel, so the alignment code
+      was not used at all. Even though our analysis code was not used, I was able to learn a lot from this experience, and this ended up
+      being one of my favorite projects in FRC. </p>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+
+  </body>
+</html>

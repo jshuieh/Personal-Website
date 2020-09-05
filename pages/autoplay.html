@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julia Shuieh - AutoPlay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="..\style\page.css">
+    <link rel="shortcut icon" href="..\favicon.ico">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="title">
+      <a href="..\index.html">Julia Shuieh</a>
+    </div>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="..\about.html">About</a>
+          <a href="..\education.html">Education</a>
+          <a href="..\experience.html">Experience</a>
+          <a href="..\projects.html">Projects</a>
+          <a href="..\skills.html">Skills</a>
+          <a href="..\contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="..\about.html">About</a></div>
+      <div class="page"><a href="..\education.html">Education</a></div>
+      <div class="page"><a href="..\experience.html">Experience</a></div>
+      <div class="page"><a href="..\projects.html">Projects</a></div>
+      <div class="page"><a href="..\skills.html">Skills</a></div>
+      <div class="page"><a href="..\contact.html">Contact</a></div>
+    </div>
+  </div>
+  <div class="container" style="background-color:#040404; padding: 50px 15%; min-height: calc(100vh - 325px);">
+    <div class="page-title">AutoPlay</div>
+    <div class="skills">Java • WPILib • Eclipse • Threading • Sockets • Control System</div>
+    <div class="date">Mar 2017 - Apr 2017</div>
+    <p>After finishing the brunt of the drive code for the FRC competition, my project team didn’t have much to do. As a result, we decided to
+      start on a new project. Since each game has both an autonomous and teleop (joystick controlled) section, we had the idea to make a project
+      that would reproduce actions done in teleop during autonomous mode. This gave birth to AutoPlay. </p>
+    <p>By using AutoPlay, the robot would replay movements and commands running from previously recorded teleop sessions. The program receives
+      the values from sensors every 10 milliseconds using a Java client and writes them into a text file while the robot is running with another
+      Java client. It also records if commands are running or not. </p>
+    <p>We utilized many threads to record the values, to send them to the server, and to replay them in autonomous mode. We used
+      ArrayBlockingQueue to accumulate values and send them every second rather than every 10 milliseconds to prevent errors from server lag.
+      Another client was used to get the values from the text file and overwrite the Java file. Using the values from the text file, a Java file
+      is overwritten with the new values. The program can then be switched to autonomous mode and replay the new values. This would allow our
+      team to create autonomous code in minutes, rather than weeks. </p>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+
+  </body>
+</html>

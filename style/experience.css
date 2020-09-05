@@ -19,7 +19,8 @@
   width: 70%;
   background-color: #151515;
   margin-top: 30px;
-  transition: all 0.5s;
+  transition: all 0.25s;
+  cursor: pointer;
 }
 
 .exp:hover {
@@ -49,6 +50,20 @@
   margin-top: 5px;
 }
 
+.exp > .name::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.exp > .name::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.exp > .name::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 .exp >  .date {
   text-align: left;
   font-size: 20px;
@@ -58,6 +73,20 @@
   color: #DDDDDD;
   display: block;
   margin-top: 5px;
+}
+
+.exp >  .date::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.exp >  .date::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.exp >  .date::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .exp > .summary {
@@ -70,6 +99,20 @@
   display: block;
   margin-left: 3%;
   width: 80%;
+}
+
+.exp > .summary::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.exp > .summary::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.exp > .summary::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .exp-content {
@@ -91,5 +134,19 @@
   display: list-item;
   font-size: 16px;
   color: #F2F2F2;
-  line-height: 120%;
+  line-height: 130%;
+}
+
+.exp-content > li::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.exp-content > li::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.exp-content > li::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }

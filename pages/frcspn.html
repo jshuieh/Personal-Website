@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julia Shuieh - FRCSPN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="..\style\page.css">
+    <link rel="shortcut icon" href="..\favicon.ico">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="title">
+      <a href="..\index.html">Julia Shuieh</a>
+    </div>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="..\about.html">About</a>
+          <a href="..\education.html">Education</a>
+          <a href="..\experience.html">Experience</a>
+          <a href="..\projects.html">Projects</a>
+          <a href="..\skills.html">Skills</a>
+          <a href="..\contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="..\about.html">About</a></div>
+      <div class="page"><a href="..\education.html">Education</a></div>
+      <div class="page"><a href="..\experience.html">Experience</a></div>
+      <div class="page"><a href="..\projects.html">Projects</a></div>
+      <div class="page"><a href="..\skills.html">Skills</a></div>
+      <div class="page"><a href="..\contact.html">Contact</a></div>
+    </div>
+  </div>
+  <div class="container" style="background-color:#040404; padding: 50px 15%;">
+    <div class="page-title">FRCSPN</div>
+    <div class="skills">Java • JavaFX • Eclipse • Git • User Interface</div>
+    <div class="date">Jan 2018 - Apr 2018</div>
+    <p>In FRC competitions, scouting is a very important part to gain knowledge about the capabilities of other teams’ robots.
+      This is important for creating alliances, as you would want a team that performs well and has a strategy that pairs well
+      with your own. As such, this information is essential for teams who are alliance captains and choose teams to be in their
+      alliances, as well as other teams who would know they should appeal to. Usually, our team would watch other robots and
+      record what features they have, how much they scored, etc. However, this generates a vast amount of data, which can be
+      unorganized.</p>
+    <img src="..\images\proj\frcspn\main.PNG" class="pic">
+    <div class="subtitle">The main screen after opening the FRCSPN app</div>
+    <p>Our team wanted to create an application named FRCSPN that would help organize this data, and possibly add some analysis
+      to it, such as predicting match outcomes given certain alliances. We utilized a website called The Blue Alliance, which
+      had vast amounts of team and match data for many years of FRC competitions. We wanted to base our application with that
+      to use sample data from past competitions, then use real-time data from our scouting. We used JavaFX for our UI as most
+      team members knew how to use it from our school’s APCS course.</p>
+    <img src="..\images\proj\frcspn\team.PNG" class="pic">
+    <div class="subtitle">The Team Events interface</div>
+    <p>We first worked on a “Team Events” interface for displaying data of teams we wanted to keep track of. We had a sidebar for
+      different categories of teams, where you could add or remove teams from each category. The teams were displayed on the main
+      window on the right side, and it would have columns of stacked team numbers. The numbers can be clicked to reveal the events
+      that the team would be attending, and it would include the event name, location, and dates.</p>
+    <img src="..\images\proj\frcspn\matches.PNG" class="pic">
+    <div class="subtitle">The Matches interface</div>
+    <p>Our second interface, “Matches”, would first bring the user to a window where it listed all of the events for this season
+      on the left side, and it would display data about the event on the right side. This data included the name, dates, location,
+      and event code/key. There was a search bar on the top to filter out events by name. The top also included immediate upcoming
+      events for easy access. There is a button for selecting the event.</p>
+    <p>After selecting an event, the application would display the information about the matches for the selected event. It would
+      display previously recorded scout data from the outcome of the matches, and users would be able to record scout data onto
+      the application. Then, the data can be sorted and organized to best fit the user’s needs.</p>
+    <img src="..\images\proj\frcspn\loading.PNG" class="pic">
+    <div class="subtitle">The loading screen that I was in charge of</div>
+    <p>I primarily worked on the UI design and implementation of the Team Events and Match selection interfaces. In particular, I
+      helped create classes to represent different components of the UI. I ensured that the UI was modular, clean, and easy-to-use
+      for users. I also worked on a loading screen for when the program was still gathering and processing data from Blue Alliance.
+      Other team members worked on gathering data from the website by accessing their API and other interfaces. I regularly checked
+      in with our project lead to make sure that the UI fit with his expectations, and was in charge of integrating features from
+      multiple developers. </p>
+    <p>For future work, we wanted to use the data recorded on the application and use a neural network to predict what alliances
+      would win given teams in each alliance. We thought it would be best if a different language was used, and if we could have
+      a web application instead of a desktop application.</p>
+
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+
+  </body>
+</html>

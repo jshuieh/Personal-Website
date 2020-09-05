@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julia Shuieh - HAI Test Automation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="..\style\page.css">
+    <link rel="shortcut icon" href="..\favicon.ico">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="title">
+      <a href="..\index.html">Julia Shuieh</a>
+    </div>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="..\about.html">About</a>
+          <a href="..\education.html">Education</a>
+          <a href="..\experience.html">Experience</a>
+          <a href="..\projects.html">Projects</a>
+          <a href="..\skills.html">Skills</a>
+          <a href="..\contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="..\about.html">About</a></div>
+      <div class="page"><a href="..\education.html">Education</a></div>
+      <div class="page"><a href="..\experience.html">Experience</a></div>
+      <div class="page"><a href="..\projects.html">Projects</a></div>
+      <div class="page"><a href="..\skills.html">Skills</a></div>
+      <div class="page"><a href="..\contact.html">Contact</a></div>
+    </div>
+  </div>
+  <div class="container" style="background-color:#040404; padding: 50px 15%;">
+    <div class="page-title">Horizon Agents Installer Test Automation</div>
+    <div class="skills">PowerShell • C# • Microsoft Azure • Jenkins • Git • Virtual Machines • UI Automation</div>
+    <div class="date">Jun 2020 - Aug 2020</div>
+    <p>During my internship with VMware, I worked in the Horizon team in the EUC business unit. For my intern project,
+      I worked on test automation for the Horizon Agents Installer, or HAI. For those who may not know, Horizon Agent
+      is needed for virtual machines accessed by Horizon Client, and HAI installs various selectable features for these
+      VMs.</p>
+    <p>Since Horizon Agent could be installed by many kinds of VMs, developers must test that HAI works on different OSes
+      and that any new changes do not cause regressions. However, since there wasn’t any automated testing before,
+      developers had to test the installer manually on multiple VMs, which can be time-consuming and repetitive, or the
+      tests were simply incomplete or not done.</p>
+    <p>Our goals for this project were to automate tests for installing, repairing, uninstalling, and upgrading. We also
+      wanted to allow multiple developers to run their tests simultaneously, and to design the test so that infrastructure
+      management is minimized. To accomplish these goals, we wanted to use PowerShell scripts as it would be easy to
+      perform tasks needed for tests, such as silently installing the Agent, checking if the features were installed
+      properly, and writing log files. We wanted to use Azure for our test infrastructure to create and store test
+      resources, such as our test VMs and installer files. If we were to use vSphere, VMware’s cloud computing platform,
+      instead for our infrastructure, our scale would have been limited to pre-configured settings. By using Azure’s public
+      cloud, we have essentially infinite capacity for the number of test VMs and concurrent tests. We wanted to use
+      Jenkins to schedule daily tests and send notifications of the test results to quickly address any bugs created
+      during development. Lastly, we wanted to have sufficient logs to allow developers to easily see what issues there
+      are if tests fail, and they could start working on fixes quicker.</p>
+    <p>Before running the tests, users need to use scripts to set up their Azure account, and create a resource group
+      containing shared images. The images are created using VMs of Windows 7, 10, and 2019. The shared images are used
+      as a “template” for the VMs and could be used by multiple developers when running the tests. However, users could
+      also customize their source images if they would like specific settings or programs on the test VMs. </p>
+    <p>To run the tests locally, developers would simply start one script. The script first queries Azure for a resource
+      group containing the shared images, then uses those images to create the test VMs in a new resource group. Other
+      resources are also created, such as storage containers to store the HAI builds, and file shares to store the HAI
+      logs after the tests. </p>
+    <p>One issue that we had to resolve was downloading the HAI builds onto the test VMs. Of course, if we had only wanted
+      to test released builds, it would be very easy to do this. However, we wanted to be able to test the latest builds
+      still in development and sandbox builds. We also wanted to be able to customize the branch, version, and build
+      number. These builds would have to be downloaded from BuildWeb with VMware VPN access. As such, a script would
+      download the requested build on the local machine (which would have VPN access) through the REST API, and the build
+      would be uploaded as a blob to the storage containers. By doing this, the test VMs could access the builds with the
+      blob download link.</p>
+    <p>After uploading all of the HAI builds that would be used in the tests, test scripts would be run remotely by pushing
+      Powershell script executions to the test VMs. To have more modularity, each set of tests are separated into different
+      scripts, which would run the individual tests on each VM. By doing this, it would be more convenient to customize
+      which sets of tests to run. For each test, the result for each VM would be printed to the console in real-time. A log
+      file would also record the steps taken and the outcome of the test, including the reason if it fails. These test log
+      files would be stored on the local machine in the TEMP directory. After each set of tests, HAI logs would be zipped
+      and uploaded to the file share, and a link to download the HAI logs would be printed out to the console. By having
+      substantial logging, developers could easily find when and why the test failed, so they can quickly start working on
+      a fix.</p>
+    <p>The sets of tests were:</p>
+    <ul>
+      <li>install:  silently install, repair, and uninstall the latest build.</li>
+      <li>upgrade: silently install an older version, upgrade to the latest build, and uninstall.</li>
+      <li>UI: perform various checks on the UI. Some of the things we checked were the features shown, the silent install
+        command, error windows, and rollback after canceling installs.</li>
+    </ul>
+    <p style="margin-top: 10px;">After the tests finished, the console would print out the result of each test for each VM again, along with the file
+      path containing the test logs.</p>
+    <p>For any scheduled job from Jenkins, the test will be run from a slave VM, and the results will be sent to developers’
+      emails or Slack after the test suite is finished. The log files can be attached to the emails and are also easily
+      accessible from the Jenkins dashboard. The daily Jenkins test would tell the developers if something has gone wrong
+      recently. Individual developers can also use this test setup from their local machines for their personal sandbox testing.</p>
+    <img src="..\images\proj\hai\HAIPoster.PNG" class="pic">
+    <div class="subtitle">My project poster for HAI test automation</div>
+    <p>While I was still working on the test automation, I had to create a poster and presentation about this project for VMware’s
+      intern poster session, where all R&D had to present their projects. Although it occurred in the middle of my internship,
+      I had finished most of the test automation, and only had not worked on the set of UI tests yet. I presented my project
+      again at the end of my internship to a couple of related teams.</p>
+    <p>In the future, the current tests can act as a framework for new tests for new functionality to the HAI. It would be great
+      to have more customization on the tests, as currently, developers would have to manually edit the code to run only some
+      tests. A good way to do this would be to create a desktop application for running the tests or perhaps adding more
+      parameters to the Jenkins test suite.</p>
+    <p>I believe that this project was a very good first experience working in a real professional setting. I was able to learn
+      how to go through the code review process using ReviewBoard, and we had daily meetings reporting on our progress, which
+      we tracked using JIRA sprint boards. It was slightly different from the conventional internship since everything was
+      remote, but this only emphasized the need for clear communication with my mentor and manager. I enjoyed being a part of
+      developing a widely used program, and I want to give special thanks to my mentor Joel and my manager Sonia.</p>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+
+  </body>
+</html>

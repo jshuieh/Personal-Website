@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julia Shuieh - Pit TV Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="..\style\page.css">
+    <link rel="shortcut icon" href="..\favicon.ico">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="title">
+      <a href="..\index.html">Julia Shuieh</a>
+    </div>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="..\about.html">About</a>
+          <a href="..\education.html">Education</a>
+          <a href="..\experience.html">Experience</a>
+          <a href="..\projects.html">Projects</a>
+          <a href="..\skills.html">Skills</a>
+          <a href="..\contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="..\about.html">About</a></div>
+      <div class="page"><a href="..\education.html">Education</a></div>
+      <div class="page"><a href="..\experience.html">Experience</a></div>
+      <div class="page"><a href="..\projects.html">Projects</a></div>
+      <div class="page"><a href="..\skills.html">Skills</a></div>
+      <div class="page"><a href="..\contact.html">Contact</a></div>
+    </div>
+  </div>
+  <div class="container" style="background-color:#040404; padding: 50px 15%; text-align: center;">
+    <div class="page-title">Pit TV Display</div>
+    <div class="skills">Python • Tkinter • GPIO • Raspberry Pi • Arduino • Linux • User Interface • Project Management</div>
+    <div class="date">Jan 2019 - Apr 2019</div>
+    <p>For each robotics team in competitions, they are allocated space as the “pit” for storing their tools, supplies,
+      and space for fixing up the robot between matches. Many teams also utilize their pits to give out buttons and such
+      to publicize their teams. Our team also give out buttons and flyers about our team and robot, but we wanted to
+      decorate our pit to attract guests, judges, and other teams. As such, I was the project lead for this project
+      during the 2019 season FRC tournament.</p>
+    <p>Our initial goal was to create an interactive TV display. We wanted to display many different screens, and at
+      least include information about our team and our robot, including the robot’s components and functionality. By having
+      this TV display, we hoped to help users understand more about our team and robot, especially people from other teams
+      so that they would choose our robot to be in their alliance if needed. We also wanted to impress judges and be
+      considered for the Team Spirit Award. </p>
+    <p>As the project lead, I had to schedule a rough estimate of our tasks to ensure that our project would be finished
+      before the competition days. I primarily only had one person, Rithu, working with me on this project, and since
+      she was new to the team and programming, I helped throughout the project with software issues, assigning her tasks,
+      and integrating her with the team. I wanted to ensure that she had a good experience in the team, as well as boost
+      her confidence as a team member.</p>
+    <p>We first had to brainstorm how we would set up the TV display. Since we did not have any examples from prior years,
+     we had to start from scratch. At first, we considered using a TouchJet Wave that our team owned, and we tested it
+     out with our TV. We found that it didn’t suit our needs as we needed the TV to be vertical as there wouldn’t be
+     enough space otherwise. However, the TouchJet only worked with a TV used in landscape mode.</p>
+    <p>Instead, we decided to use a Raspberry Pi and Arduino, where the Raspberry Pi would have a program with different
+     screens, and we could use buttons connected to the Arduino to navigate between different pages. We decided to use
+     Python as our language as it was easily usable on the Raspberry Pi, and we used Tkinter for our GUI. </p>
+    <p>Next, we had to find content for the display. We needed a video or an informational slideshow about our robot to
+     showcase its functionality, and we also needed to retrieve images and information about our team. As our team had
+     many different projects apart from the robot itself, we had a vast amount of choices. We could potentially
+     showcase a demo from our computer vision project, or show a gameplay video from our video game project replicating
+     the competition game. As such, other than programming the UI for our display and button I/O, I had to contact
+     various project teams, such as PR, to request for such content to integrate into our display. </p>
+    <img src="..\images\proj\pit-tv-display\PitTVDisplay.png" class="pic">
+    <div class="subtitle">The final design of the pit</div>
+    <p>After many iterations of design, our final design, inspired by the theme of the Apollo 11 anniversary, included a
+     backdrop, with the left side painted like the Earth and the right side painted as the moon. The right side would
+     have the TV, with a row of arcade-style buttons to switch between screens. In the end, the various screens included
+     a slideshow about the various components of the robot, an informational screen about our team, a gameplay demo
+     from our video game project, and a showcase video of our robot. We also implemented a slideshow of our sponsors
+     that would run when the TV had been inactive for some time.</p>
+    <p>The left side would be decorated with a rocket ship, and we would have our buttons and flyers on this side. There
+      would be a button on the rocket ship, where it started a “launch sequence.” “Flames” would turn on at the bottom
+      of the rocket ship, then after a few minutes, an Apollo capsule at the top of the rocketship would move on a metal
+      railing from the left side to the right side. Then, the TV display would show a video of the Apollo mission, with
+      an animation of our robot edited in. The capsule would shortly return to the left side. </p>
+    <p>This change in our design led to more work needing to be done. Other than programming the GUI and I/O for the arcade
+      buttons, we had to program the “launch” sequence, including adding power to the “flames”, the motor that moved the
+      capsule, and interrupt the current screen with the Apollo 11 video. I also had to work with our mentor, our hardware
+      team, and our PR team to complete all of the necessary hardware and TV content for this sequence.</p>
+    <video class="vid" controls>
+      <source src="..\images\proj\pit-tv-display\edited_track.mp4" type="video/mp4">
+    </video>
+    <div class="subtitle">Testing the track and motor for the capsule</div>
+    <p>We were successfully able to program all of the necessary parts, integrate components from other project teams, and
+      test them all together in preparation for the competitions. During the days of the actual competition, I helped set
+      up the pit, the TV display, and the software for the program. When I wasn’t busy with scouting, I helped troubleshoot
+      any problems that occurred during the day, including electrical issues or insufficient power to the motor.</p>
+    <video class="vid" controls>
+      <source src="..\images\proj\pit-tv-display\edited_run2.mp4" type="video/mp4">
+    </video>
+    <div class="subtitle">A run of the launch sequence during competitions</div>
+    <video class="vid" controls>
+      <source src="..\images\proj\pit-tv-display\edited_run1.mp4" type="video/mp4">
+    </video>
+    <div class="subtitle">A closer view of the launch sequence</div>
+    <p>In the end, we didn’t receive a Team Spirit Award. However, many guests stopped by and enjoyed interacting with the
+      display, especially the launch sequence. Many judges were impressed, and our mentor was very proud as he had hoped to
+      have a pit design like this for many years. Our team was chosen for quarterfinals by one of the alliance leaders for
+      the Silicon Valley Regionals. Although our team wasn’t one of the finalists, I imagine that our display helped convince
+      the alliance leader to choose our team and be one step closer to victory.</p>
+    <p>Although I was first taken aback about being assigned such a simple project, I eventually grew to love this project
+      after we fleshed out the final design since it was so much more intricate than before. I loved the idea of merging
+      the work of so many teams to create such a fun and creative product. I grew my experience in managing a project,
+      including scheduling tasks to make sure we finished in time, and I also had fun participating in the competitions.
+      I want to give special thanks to my mentor Mr. Williams for helping me in all these years in robotics.</p>
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+
+  </body>
+</html>

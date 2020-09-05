@@ -21,7 +21,7 @@ p {
     text-align: center;
     line-height: 40px;
     float: left;
-    transition: all 0.5s;
+    transition: all 0.25s;
     cursor: pointer;
     height: 40px;
 }
@@ -42,7 +42,7 @@ p {
 
 .tab:hover {
   transition: all 0.5s;
-  background-color: #242424;
+  background-color: #1C1C1C;
 }
 
 .tab-text {
@@ -114,6 +114,20 @@ p {
   margin-top: 0px;
 }
 
+.course > .name::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.course > .name::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.course > .name::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 .course > .subject {
   color: grey;
   text-align: right;
@@ -136,6 +150,20 @@ p {
   margin-left: 10%;
   width: auto;
   text-align: left;
+}
+
+.course > .description::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.course > .description::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.course > .description::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .school {
@@ -167,6 +195,20 @@ p {
   margin-top: 5px;
 }
 
+.school > .name::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.school > .name::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.school > .name::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 .school > .date {
   text-align: left;
   font-size: 22px;
@@ -178,6 +220,20 @@ p {
   margin-top: 0px;
 }
 
+.school > .date::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.school > .date::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.school > .date::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 .school > .gpa {
   text-align: left;
   font-size: 18px;
@@ -187,6 +243,20 @@ p {
   color: #D0D0D0;
   display: block;
   margin-top: 5px;
+}
+
+.school > .gpa::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.school > .gpa::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.school > .gpa::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .major {
@@ -219,4 +289,18 @@ p {
   margin-top: 0px;
   height: 100%;
   line-height: 60px;
+}
+
+.major > .name::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.major > .name::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.major > .name::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }

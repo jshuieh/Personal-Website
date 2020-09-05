@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julia Shuieh - Octave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="..\style\page.css">
+    <link rel="shortcut icon" href="..\favicon.ico">
+</head>
+
+<body>
+  <div class="nav-bar">
+    <div class="title">
+      <a href="..\index.html">Julia Shuieh</a>
+    </div>
+    <div class="element">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-nav fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="..\about.html">About</a>
+          <a href="..\education.html">Education</a>
+          <a href="..\experience.html">Experience</a>
+          <a href="..\projects.html">Projects</a>
+          <a href="..\skills.html">Skills</a>
+          <a href="..\contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="page"><a href="..\about.html">About</a></div>
+      <div class="page"><a href="..\education.html">Education</a></div>
+      <div class="page"><a href="..\experience.html">Experience</a></div>
+      <div class="page"><a href="..\projects.html">Projects</a></div>
+      <div class="page"><a href="..\skills.html">Skills</a></div>
+      <div class="page"><a href="..\contact.html">Contact</a></div>
+    </div>
+  </div>
+  <div class="container" style="background-color:#040404; padding: 50px 15%;">
+    <div class="page-title">Octave</div>
+    <div class="skills">Lua • JSON • LOVE2D • Git • Game Development • User Interface • File I/O</div>
+    <div class="date">Sep 2019 - Dec 2019</div>
+    <p>In CMU’s Game Creation Society, members pitch their game ideas each semester, and other members join their teams to help
+      develop the game before the game showcase at the end of the semester. During Fall 2019, I helped develop Octave, a 2D
+      “multi-directional” rhythm game. It was designed to be played on the showcase arcade machine, as it would use joystick
+      and button controls. The notes would move down different tracks, and players had to time button presses to successfully
+      get points. The team lead wanted to use songs from previous or unfinished GCS games, as well as some original songs. He
+      also decided that we would use LOVE2D and Lua to create the game.</p>
+    <img src="..\images\proj\octave\gameplay.png" class="pic">
+    <div class="subtitle">The gameplay for Octave</div>
+    <p>There were several main parts of the game. The game had a menu screen that would show all of the possible songs in a
+      scrolling fashion, similar to arcade games such as Dance Dance Revolution. The menu screen displayed information about
+      each song, including all of the high scores for that song. The color scheme and background would also change depending
+      on the song. The actual gameplay needed to generate note circles based on MIDI files, and the notes had to properly go
+      down tracks towards the center. After the song is finished, there would be a screen showing the score and various stats,
+      and the player would be able to enter their name to be recorded with the score. Players would enter their name one
+      character at a time, similar to old arcade games.</p>
+    <img src="..\images\proj\octave\menu.png" class="pic">
+    <div class="subtitle">The song selection menu with differing color palettes and background</div>
+    <p>I mostly worked on the game menus, in particular the song selection and the name selection interfaces. I discussed with
+      the team lead and other members about the design of the menus and programmed the UI to fit them as desired. I had to
+      ensure that the UI would properly display on different sized screens, and could be navigated using the joystick and button
+      controls. I was also in charge of designing the database of the game. In the end, we had JSON files for each song to store
+      the song information and the high scores. As such, I also had to work on writing to and getting information from these
+      JSON files.</p>
+    <video class="vid" controls>
+      <source src="..\images\proj\octave\menu-vid2.mp4" type="video/mp4">
+    </video>
+    <div class="subtitle">Navigating through menus and options during song selection</div>
+    <p>Aside from working on the menus, I also helped out with various game design discussions and software issues. I helped
+      integrate many developers’ work by using Github and ensured there were no conflicts. For some time, I explored creating
+      particle effects for when players successfully hit the notes. However, we didn’t have enough time to implement them,
+      and I had to move to other work.</p>
+
+    <p>We were able to accomplish all of what we had wanted, including some reach goals, and had multiple songs. The game was
+      well-received during the showcase. I enjoyed this project as this was one of the first times I worked on a game in a team,
+      instead of by myself. I had fun collaborating with my teammates and meeting regularly to work together towards a final 
+      product.</p>
+
+  </div>
+  <div class="container">
+    <div class="rectangle-footer"></div>
+    <div class="centered">
+      <div class="container-social">
+        <a href="mailto:julia.shuieh@gmail.com" target="_blank" class="fa fa-footer fa-envelope"></a>
+        <a href="https://www.facebook.com/CrystallineBlade" target="_blank" class="fa fa-footer fa-facebook"></a>
+        <a href="https://www.instagram.com/crystallineblade/" target="_blank" class="fa fa-footer fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/juliashuieh/" target="_blank" class="fa fa-footer fa-linkedin"></a>
+        <a href="https://github.com/jshuieh" target="_blank" class="fa fa-footer fa-github"></a> <br>
+        ©2020 by Julia Shuieh
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+
+  </body>
+</html>

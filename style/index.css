@@ -43,6 +43,20 @@
   font-weight: 500;
 }
 
+.about::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.about::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.about::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 /*******************************************************************************
  Education
  ******************************************************************************/
@@ -64,11 +78,39 @@
   margin-top: 6px;
 }
 
+.education-date::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.education-date::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.education-date::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 .education-school{
   grid-area: school;
   font-size: 28px;
   color: white;
   text-align: right;
+}
+
+.education-school::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.education-school::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.education-school::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .education-major{
@@ -78,6 +120,20 @@
   text-align: left;
   float: left;
   vertical-align: bottom;
+}
+
+.education-major::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.education-major::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.education-major::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .education-heading{
@@ -96,6 +152,20 @@
   text-align: left;
   margin-top: 3px;
   line-height: 150%;
+}
+
+.education-description::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.education-description::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.education-description::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .grid-education{
@@ -151,11 +221,39 @@
   text-align: left;
 }
 
+.work-title::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.work-title::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.work-title::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 .work-date{
   color: #D0D0D0;
   font-size: 18px;
   text-align: left;
   line-height: 1.2em;
+}
+
+.work-date::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.work-date::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.work-date::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .work-description{
@@ -170,4 +268,18 @@
 .work-description > li {
   display: list-item;
   line-height: 140%;
+}
+
+.work-description > li::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.work-description > li::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.work-description > li::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
