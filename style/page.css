@@ -9,6 +9,20 @@
   margin-top: 50px;
 }
 
+.page-title::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.page-title::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.page-title::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 .skills {
   font-size: 22px;
   color: #B5B5B5;
@@ -16,11 +30,39 @@
   margin-bottom: 10px;
 }
 
+.skills::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.skills::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.skills::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 .date {
   font-size: 18px;
   color: #959595;
   width: 70%;
   margin-bottom: 50px;
+}
+
+.date::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.date::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.date::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
 }
 
 .pic {
@@ -45,6 +87,20 @@
   width: 70%;
 }
 
+.subtitle::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+.subtitle::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+.subtitle::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 p {
   display: block;
   font-size: 20px;
@@ -56,6 +112,20 @@ p {
   list-style-type: disc;
 }
 
+p::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+p::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+p::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 ul {
   margin-top: -20px;
   width: 70%;
@@ -63,9 +133,44 @@ ul {
 
 }
 
+ul > li::selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
+ul > li::-webkit-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+ul > li::-moz-selection {
+    color: #FFA6C9;
+    background: #0080FF;
+}
+
 ul > li {
   display: list-item;
   font-size: 18px;
   color: #F0F0F0;
   line-height: 115%;
+}
+
+.icons {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin-top: -30px;
+}
+
+.icon {
+  font-size: 22px;
+  color: white;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.icon:hover {
+  opacity: 0.7;
 }

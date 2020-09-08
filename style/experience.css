@@ -27,24 +27,24 @@
   background-color: #101010;
 }
 
-.exp > .icon {
+.exp > a > .icon {
   height: 85%;
   float: left;
   border-style: outset;
   border-width: 3px;
   border-color: gray;
   display: block;
-  margin-left: 2%;
+  margin-left: 2.5%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .exp > .name {
   text-align: left;
-  font-size: 28px;
-  width: 80%;
+  font-size: 27px;
+  width: 82%;
   float: left;
-  margin-left: 3%;
+  margin-left: 2.5%;
   color: white;
   display: block;
   margin-top: 5px;
@@ -69,7 +69,7 @@
   font-size: 20px;
   float: left;
   width: 80%;
-  margin-left: 3%;
+  margin-left: 2.5%;
   color: #DDDDDD;
   display: block;
   margin-top: 5px;
@@ -97,7 +97,7 @@
   float: left;
   color: #D0D0D0;
   display: block;
-  margin-left: 3%;
+  margin-left: 2.5%;
   width: 80%;
 }
 

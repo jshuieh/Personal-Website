@@ -175,7 +175,7 @@ p {
   display: block;
 }
 
-.school > .icon {
+.school > a > .icon {
   height: 100%;
   float: left;
   border-style: outset;
@@ -269,7 +269,7 @@ p {
   width: 100%;
 }
 
-.major > .icon {
+.major > a > .icon {
   height: 100%;
   float: left;
   border-style: outset;
