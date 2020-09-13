@@ -39,7 +39,11 @@
     <div class="left">
       <div class="left-top">
         <img src="images\JuliaPicture1.jpg" class="face">
-        <p><b>Name</b>: Julia Shuieh<br>
+        <audio id="myAudio">
+          <source src="name.ogg" type="audio/ogg">
+          <source src="name.mp3" type="audio/mpeg">
+        </audio>
+        <p><b>Name</b>: Julia Shuieh &ensp; <i class="fa fa-volume-down" onclick="playAudio()"></i><br>
            <b>Hometown</b>: Cupertino, CA<br>
            <b>Personality</b>: INFJ, Slytherin<br>
            <b>Hobbies</b>: video games, baking<br>
@@ -114,6 +118,10 @@
   <script>
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function playAudio() {
+      var x = document.getElementById("myAudio");
+      x.play(); 
     }
   </script>
 
