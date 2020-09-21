@@ -36,6 +36,9 @@
   margin-left: 2.5%;
   margin-top: 5px;
   margin-bottom: 5px;
+  filter: grayscale(0.5);
+  transition: all 0.5s ease-in-out;
+  background-color: #111111;
 }
 
 .exp > .name {
@@ -47,6 +50,11 @@
   color: white;
   display: block;
   margin-top: 5px;
+}
+
+.exp > a > .icon:hover {
+  filter: grayscale(0.2);
+  background-color: #0D0D0D;
 }
 
 .exp > .name::selection {

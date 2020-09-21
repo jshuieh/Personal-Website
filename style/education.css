@@ -182,6 +182,14 @@ p {
   border-width: 5px;
   border-color: gray;
   display: block;
+  filter: grayscale(0.5);
+  transition: all 0.5s ease-in-out;
+  background-color: #020202;
+}
+
+.school > a > .icon:hover {
+  filter: grayscale(0.2);
+  background-color: black;
 }
 
 .school > .name {
