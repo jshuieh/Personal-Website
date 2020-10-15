@@ -62,7 +62,7 @@
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
-  filter: grayscale(1);
+  filter: grayscale(0.2);
   background-color: black;
 }
 
