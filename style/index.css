@@ -20,12 +20,18 @@
   border-bottom: 1px solid #ffffff;
 }
 
+@media screen and (max-width: 650px) {
+  .hi {
+    font-size: 8vw;
+  }
+}
+
 /*******************************************************************************
  About Me
  ******************************************************************************/
-
 .container-about{
   z-index: -1000;
+  box-shadow: 0px -100px 50vh 10vh #000000;
 }
 
 .rectangle-about{
@@ -55,6 +61,20 @@
 .about::-moz-selection {
     color: #FFA6C9;
     background: #0080FF;
+}
+
+@media screen and (max-width: 650px) {
+  .container-about {
+    box-shadow: 0px -50px 50vh 10vh #000000;
+  }
+
+  .rectangle-about {
+    padding: 50px 10vw;
+  }
+
+  .about {
+    font-size: 24px;
+  }
 }
 
 /*******************************************************************************
@@ -186,13 +206,51 @@
   height: 10px;
 }
 
+@media screen and (max-width: 650px) {
+  .rectangle-education {
+    padding: 50px 10vw;
+  }
+
+  .grid-education {
+    width: 100%;
+    height: auto;
+    overflow-wrap: break-word;
+    display: inline-grid;
+    grid-template-areas:
+      'date'
+      'school'
+      'major'
+      'description';
+    row-gap: 5px;
+    grid-template-columns: 100%;
+    column-gap: 0px;
+    margin: 10px 0px;
+  }
+
+  .education-date {
+    text-align: left;
+  }
+
+  .education-school {
+    text-align: left;
+  }
+
+  .education-major {
+    font-size: 24px;
+  }
+
+  .education-description {
+    font-size: 14;
+  }
+}
+
 /*******************************************************************************
  Experience
  ******************************************************************************/
  .rectangle-work{
    width: 100%;
    height: auto;
-   padding: 100px 20%;
+   padding: 100px 10%;
    overflow-wrap: break-word;
    box-sizing: border-box;
    background-color: #000000;
@@ -213,6 +271,7 @@
   width: 100%;
   height: auto;
   overflow-wrap: break-word;
+  align-self: center;
 }
 
 .work-title {
@@ -283,4 +342,19 @@
 .work-description > li::-moz-selection {
     color: #FFA6C9;
     background: #0080FF;
+}
+
+@media screen and (max-width: 650px) {
+  .rectangle-work {
+    padding: 50px 10vw;
+  }
+
+  .work-entry {
+    margin: 50px 0px;
+  }
+
+  .work-description {
+    text-align: justify;
+    text-justify: auto;
+  }
 }
