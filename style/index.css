@@ -26,6 +26,12 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .hi {
+    font-size: 7vw;
+  }
+}
+
 /*******************************************************************************
  About Me
  ******************************************************************************/
@@ -63,9 +69,23 @@
     background: #0080FF;
 }
 
+@media screen and (max-width: 1200px) {
+  .container-about {
+    box-shadow: 0px -50px 50vw 10vw #000000;
+  }
+
+  .rectangle-about {
+    padding: 75px 10vw;
+  }
+
+  .about {
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .container-about {
-    box-shadow: 0px -50px 50vh 10vh #000000;
+    box-shadow: 0px -50px 50vw 10vw #000000;
   }
 
   .rectangle-about {
@@ -73,7 +93,7 @@
   }
 
   .about {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -206,6 +226,31 @@
   height: 10px;
 }
 
+@media screen and (max-width: 1800px) {
+  .education-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .rectangle-education {
+    padding: 75px 10vw;
+  }
+
+  .education-date {
+    font-size: 16px;
+  }
+  .education-school{
+    font-size: 26px;
+  }
+  .education-major {
+    font-size: 22px;
+  }
+  .education-description {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .rectangle-education {
     padding: 50px 10vw;
@@ -236,11 +281,11 @@
   }
 
   .education-major {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .education-description {
-    font-size: 14;
+    font-size: 14px;
   }
 }
 
@@ -266,12 +311,12 @@
  }
 
 .work-entry{
-  margin: 30px 0px;
-  margin-left: 5%;
-  width: 100%;
+  margin: 30px auto;
+  width: 85%;
   height: auto;
   overflow-wrap: break-word;
   align-self: center;
+  padding-left: 10%;
 }
 
 .work-title {
@@ -344,17 +389,34 @@
     background: #0080FF;
 }
 
+@media screen and (max-width: 1800px) {
+  .work-entry {
+    width: 90%;
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .work-entry {
+    width: 95%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .work-entry {
+    width: 97%;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .rectangle-work {
     padding: 50px 10vw;
   }
 
   .work-entry {
-    margin: 50px 0px;
-  }
-
-  .work-description {
-    text-align: justify;
-    text-justify: auto;
+    width: 100%;
+    padding: 0;
   }
 }
