@@ -26,10 +26,18 @@ p {
     height: 40px;
 }
 
-.three-tabs {
+.cmu-tabs {
   width: 33%;
 }
-.three-tab {
+
+.cmu-tab {
+  width: 33.33%;
+}
+
+.cc-tabs {
+  width: 33%;
+}
+.cc-tab {
   width: 33.33%;
 }
 
