@@ -41,6 +41,14 @@ p {
   width: 33.33%;
 }
 
+.tino-tabs {
+  width: 11%;
+}
+
+.tino-tab {
+  width: 100%;
+}
+
 .tab:hover {
   transition: all 0.5s;
   background-color: #1C1C1C;
@@ -91,7 +99,6 @@ p {
 
 .course {
   overflow: auto;
-  padding-top: 5px;
   transition: all 0.2s;
   cursor: pointer;
   padding-top: 5px;
@@ -312,4 +319,9 @@ p {
 .major > .name::-moz-selection {
     color: #FFA6C9;
     background: #0080FF;
+}
+
+.hs {
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
