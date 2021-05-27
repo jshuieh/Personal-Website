@@ -26,18 +26,27 @@ p {
     height: 40px;
 }
 
-.two-tabs {
-  width: 22%;
-}
-.two-tab {
-  width: 50%;
-}
-
-.three-tabs {
+.cmu-tabs {
   width: 33%;
 }
-.three-tab {
+
+.cmu-tab {
   width: 33.33%;
+}
+
+.cc-tabs {
+  width: 33%;
+}
+.cc-tab {
+  width: 33.33%;
+}
+
+.tino-tabs {
+  width: 11%;
+}
+
+.tino-tab {
+  width: 100%;
 }
 
 .tab:hover {
@@ -90,7 +99,6 @@ p {
 
 .course {
   overflow: auto;
-  padding-top: 5px;
   transition: all 0.2s;
   cursor: pointer;
   padding-top: 5px;
@@ -311,4 +319,9 @@ p {
 .major > .name::-moz-selection {
     color: #FFA6C9;
     background: #0080FF;
+}
+
+.hs {
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
