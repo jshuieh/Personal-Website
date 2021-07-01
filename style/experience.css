@@ -36,7 +36,7 @@
   margin-left: 2.5%;
   margin-top: 5px;
   margin-bottom: 5px;
-  filter: grayscale(0.5);
+  filter: grayscale(0.45);
   transition: all 0.5s ease-in-out;
   background-color: #111111;
 }
