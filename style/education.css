@@ -34,6 +34,14 @@ p {
   width: 33.33%;
 }
 
+.ga-tabs {
+  width: 11%;
+}
+
+.ga-tab {
+  width: 100%;
+}
+
 .cc-tabs {
   width: 33%;
 }
